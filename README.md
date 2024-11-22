@@ -54,4 +54,4 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
-- https://brett.trpstra.net/brettterpstra -> https://Progeny2551.github.io/RSS-GPT/weibo.xml
+- https://hub.rss.direct/twitter/user/RICHG6789, https://hub.rss.direct/twitter/user/JLSQ_Ssexy, https://hub.rss.direct/twitter/user/wubu2019, https://hub.rss.direct/twitter/user/hanyan789, https://hub.rss.direct/twitter/user/NTphotographyNT, https://hub.rss.direct/twitter/user/vidacg2, https://hub.rss.direct/twitter/user/mangmang2001, https://hub.rss.direct/twitter/user/duyao_56789 -> https://Progeny2551.github.io/RSS-GPT/twitter-1.xml
