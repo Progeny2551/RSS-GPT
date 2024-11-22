@@ -1,0 +1,2063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>BrettTerpstra.com - The Mad Science of Brett Terpstra</title>
+<link>https://brettterpstra.com/</link>
+
+<item>
+<title>Web Excursions for November 21st, 2024</title>
+<link>https://brett.trpstra.net/link/535/16893331/web-excursions-for-november-21st-2024</link>
+<guid>https://brett.trpstra.net/link/535/16893331/web-excursions-for-november-21st-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with Backblaze. <a href="https://secure.backblaze.com/r/00dszk">Back up everything.</a></p>
+
+<dl>
+  <dt><a href="https://www.weightedhug.com/">Weighted Hug</a></dt>
+  <dd>A friend of mine launched these recently. I purchased one after trying it on at the launch party. It&rsquo;s amazing. My breathing immediately slowed and the noise of the party became more bearable. At home I&rsquo;ve found it a great relief when I&rsquo;m feeling anxious or stressed. Highly recommend. Hand made, super high quality.</dd>
+  <dt><a href="https://addons.mozilla.org/en-US/firefox/addon/linkding-injector/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search">linkding injector</a></dt>
+  <dd>
+    <blockquote>
+      <p>Ever created bookmarks, only to forget about them later? Don&rsquo;t regularly search within your bookmarks? This (Firefox) extension is designed to help with this kind of problem.</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <blockquote>
+
+    </blockquote>
+  </dd>
+  <dd>
+    <blockquote>
+      <p>Injects search results from the linkding bookmark service into search pages like google and duckduckgo</p>
+    </blockquote>
+  </dd>
+  <dt><a href="https://www.wikihow.com/Be-Online-Anonymously">15 Easy Ways to Stay Anonymous Online: Mask Your Identity</a></dt>
+  <dd>
+    <blockquote>
+      <p>Learn various steps you can take to protect your privacy online.</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <p>I don&rsquo;t want to fearmonger, but you might want to consider being a little more private these days. These are basic steps you can take to protect yourself. You probably know most of them, but if you don&rsquo;t, here you go.</p>
+  </dd>
+  <dt><a href="https://deck.blue/">deck.blue</a></dt>
+  <dd>Get the most out of Bluesky with a multi-column layout like Tweetdeck.</dd>
+</dl>
+
+<p>Backblaze securely backs up your entire computer to the cloud, affordably and reliably. I trust it with all my data. <a href="https://secure.backblaze.com/r/00dszk">Check it out today.</a></p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F21%2Fweb-excursions-for-november-21st-2024%2F&amp;text=Web+Excursions+for+November+21st%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F21%2Fweb-excursions-for-november-21st-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16893331.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-21T11:57:00-06:00</pubDate>
+<pubDate>2024-11-21T11:57:00-06:00</pubDate>
+</item>
+<item>
+<title>A card-based layout for linkding</title>
+<link>https://brett.trpstra.net/link/535/16889966/a-card-based-layout-for-linkding</link>
+<guid>https://brett.trpstra.net/link/535/16889966/a-card-based-layout-for-linkding</guid>
+<content:encoded><![CDATA[
+
+<p>I took a whack at making linkding look more like LinkWarden. I didn&rsquo;t want to modify the source, so I did the whole thing using CSS only. It was an adventure.</p>
+
+<p>I&rsquo;ve mentioned <a href="https://linkding.link/">linkding</a> a few times, and am now hosting <a href="https://bookmarks.scoffb.in/bookmarks/shared">all of my bookmarks</a> with it. I switched from a hosted solution to running it on my Synology via a Docker container (super easy to set up with Container Manager and Web Portal, if you&rsquo;re a Synology user).</p>
+
+<p>linkding allows for custom CSS, and I wanted to play with it a bit. By default it looks a lot like Pinboard, which is a bit plain. I kind of liked the way <a href="https://github.com/linkwarden/linkwarden">LinkWarden</a> looks, so I gave that a shot.</p>
+
+<p>Links are displayed as &ldquo;cards&rdquo; instead of lines, with the snapshot image large at the top. The full image is clickable. In bulk edit mode, the entire card becomes clickable. On mobile it switches to one or two columns (based on resolution and orientation), which isn&rsquo;t great for browsing a large collection, but that&rsquo;s just how cards are going to work and still be readable. On a wider desktop monitor you can get four columns and browsing is really nice. Given I mostly search by title or tag and don&rsquo;t spend a lot of time just scrolling through, it works great for my personal needs. You can <a href="https://bookmarks.scoffb.in/bookmarks/shared">see it in action here</a>.</p>
+
+<p><a href="https://bookmarks.scoffb.in/bookmarks/shared">
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="linkding-cards.jpg" class="aligncenter" height="840" src="https://cdn3.brettterpstra.com/uploads/2024/11/linkding-cards.jpg" title="linkding-cards.jpg" width="1246" />
+              </noscript>
+            </a></p>
+
+<p>Tags are moved into a sliding panel on the right, just hover over the &ldquo;TAGS&rdquo; tab to expose them. This all has to be done with CSS, so it&rsquo;s not a perfect implementation, which would require a little bit of javascript. But it&rsquo;s totally working.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="linkding-tags.jpg" class="aligncenter" height="688" src="https://cdn3.brettterpstra.com/uploads/2024/11/linkding-tags.jpg" title="linkding-tags.jpg" width="1036" />
+              </noscript>
+            
+
+<p>If you want to play with it, <a href="https://gist.github.com/ttscoff/041eccfbdd70c72698ffb570586dbea5">here&rsquo;s the code</a>. If you do, here are. the settings I recommend with it:</p>
+
+<ul>
+  <li>dark mode</li>
+  <li>separate description</li>
+  <li>use snapshot images</li>
+  <li>use favicons (optional)</li>
+</ul>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="linkding-settings1.jpg" class="aligncenter" height="502" src="https://cdn3.brettterpstra.com/uploads/2024/11/linkding-settings1.jpg" title="linkding-settings1.jpg" width="594" />
+              </noscript>
+            
+
+<p>To add the CSS, just copy and paste it into the Custom CSS box in settings. When you hit save, the new style will be applied. You can remove it at any time just by clearing that box and hitting save.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="linkding-customcss.jpg" class="aligncenter" height="334" src="https://cdn3.brettterpstra.com/uploads/2024/11/linkding-customcss.jpg" title="linkding-customcss.jpg" width="575" />
+              </noscript>
+            
+
+<p>The process of moving everything around and restyling it led to a lot of z-index and positioning considerations when opening confirmation dialogs and what not. I think I found all the issues and solved them, but let me know if you try it and run into any issues.</p>
+
+<p>I made use of CSS variables as much as possible, so modifying the color scheme should be relatively painless. Note that the variables use raw rgb numeric values, not actual <code class="language-plaintext highlighter-rouge">rgb(xxx,xxx,xxx)</code> rules. This is so that I can insert the raw values into <code class="language-plaintext highlighter-rouge">rgba()</code> rules and apply transparency. So if you&rsquo;re changing them, remove the <code class="language-plaintext highlighter-rouge">rgb()</code> from your rule and just include the <code class="language-plaintext highlighter-rouge">xxx, xxx, xxx</code> part.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="linkding-guest-user.jpg" class="alignright" height="125" src="https://cdn3.brettterpstra.com/uploads/2024/11/linkding-guest-user.jpg" title="linkding-guest-user.jpg" width="385" />
+              </noscript>
+            
+<p>By the way, if you&rsquo;re making your bookmarks public and want visitors to see the new layout, be sure to set the guest user to your profile.</p>
+
+<p>Have fun! Again, <a href="https://gist.github.com/ttscoff/041eccfbdd70c72698ffb570586dbea5">here&rsquo;s the code</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113505240026515715" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F18%2Fa-card-based-layout-for-linkding%2F&amp;text=A+card-based+layout+for+linkding&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F18%2Fa-card-based-layout-for-linkding%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16889966.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-18T11:42:00-06:00</pubDate>
+<pubDate>2024-11-18T11:42:00-06:00</pubDate>
+</item>
+<item>
+<title>Tally giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16889777/tally-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16889777/tally-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Tally icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-tally2024-rb.jpg" title="Giveaway Robot with Tally icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 2 licenses ($29.99 value each) for <a href="https://agiletortoise.com/tally/">Tally</a>. Counting seems like a simple thing, but if you&rsquo;ve ever tried to keep track of a total for a while, you know how nice it would be to have some assistance. Tally to the rescue! Easily keep multiple tallies with custom increments on your iPhone and/or Apple Watch. It&rsquo;s a brilliantly simple tool that you shouldn&rsquo;t be without.</p>
+
+<p>I use Tally all the time on my watch because I almost immediately lose count of whatever I&rsquo;m trying to track for more than 5 seconds. It&rsquo;s simple but very handy.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Tally is the quick, easy way to keep track of any sort of counts. Habit tracking, scorekeeping, attendance…anything else you keep up with. Tally’s gesture-based interface keeps your eyes free while counting.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Tally screenshot" class="aligncenter" height="511" src="https://cdn3.brettterpstra.com/uploads/2024/10/tally-screenshot.jpg" title="Tally screenshot" width="1008" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://agiletortoise.com/tally/">Tally</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, November 22, at 12pm Central. The drawing is for 2 licenses ($29.99 value each) for Tally, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/11/18/tally-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<div class="btcountdownwrapper">
+<p class="btcountdowncaption">Giveaway ends in...</p>
+<div class="btcountdown"><time datetime="2024-11-22T12:00:00-06:00"></time></div></div>
+
+<p>You need to view this post on brettterpstra.com to enter.</p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113504355161937877" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F18%2Ftally-giveaway%2F&amp;text=Tally+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F18%2Ftally-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16889777.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-18T08:00:00-06:00</pubDate>
+<pubDate>2024-11-18T08:00:00-06:00</pubDate>
+</item>
+<item>
+<title>The Monodraw giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16888924/the-monodraw-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16888924/the-monodraw-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Monodraw icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/monodraw2024-winners-rb.jpg" title="Giveaway Robot with Monodraw icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Monodraw giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>René de Heer</li>
+  <li>Jimmy Hartington</li>
+  <li>Brenden Becherer</li>
+  <li>Matt Zehner</li>
+  <li>Parshva Shah</li>
+  <li>Christian Arendt</li>
+  <li>Norman Hawker</li>
+  <li>Brian Dreau</li>
+  <li>Tom Wolfe</li>
+  <li>Thijs Hagen</li>
+  <li>Juande Santander</li>
+  <li>Ariel Cardieri</li>
+  <li>Mark Levison</li>
+  <li>David Loeffler</li>
+  <li>jon bolton</li>
+  <li>Johnny Amos</li>
+  <li>Rajiv Patel</li>
+  <li>Gavin Jerman</li>
+  <li>bryan heinz</li>
+  <li>Kevin Slaven</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://monodraw.helftone.com/">Monodraw is still worth checking out</a>. Get cracking on that awesome ASCII art you&rsquo;ve been meaning to create. Add a diagram to your text file, spruce up a README, anywhere it&rsquo;s plain text, you can make it artwork.</p>
+
+<p>Next up is <a href="https://agiletortoise.com/tally/">Tally</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://www.alfredapp.com/">Alfred 5</a></li>
+  <li><a href="https://www.takecontrolbooks.com/">Take Control Books</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://getdrafts.com/">Drafts</a></li>
+  <li><a href="https://goodtaskapp.com/mac/">GoodTask for iOS and Mac</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113498660779855971" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F16%2Fthe-monodraw-giveaway-winners%2F&amp;text=The+Monodraw+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F16%2Fthe-monodraw-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16888924.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-16T14:30:00-06:00</pubDate>
+<pubDate>2024-11-16T14:30:00-06:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for November 12th, 2024</title>
+<link>https://brett.trpstra.net/link/535/16884022/web-excursions-for-november-10th-2024</link>
+<guid>https://brett.trpstra.net/link/535/16884022/web-excursions-for-november-10th-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with <a href="https://macpaw.7eer.net/c/228914/82479/1733">CleanMyMac X</a>, all the tools to speed up your Mac, in one app.</p>
+
+<dl>
+  <dt><a href="https://www.mightydocs.dev/">mighty_docs &ndash; AI-Powered Developer Documentation Assistance</a></dt>
+  <dd>
+    <blockquote>
+      <p>Get accurate answers from the latest dev docs, customized for your tech stack, locally on your computer.</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <p>This looks great for web developers, with the ability to chat with documentation for stacks like Vue and React. Maybe more platforms in the future? But the free version is enough to test it out, and a lifetime license is a reasonable $30. Mac only.</p>
+  </dd>
+  <dt><a href="https://flexibits.com/fantastical">Fantastical for Windows</a></dt>
+  <dd>My favorite calender app for Mac and iOS is now available for Windows (scroll down the page if you don&rsquo;t see the Microsoft Store link).</dd>
+  <dt><a href="https://githubnext.com/projects/github-spark/">GitHub Spark</a></dt>
+  <dd>
+    <blockquote>
+      <p>GitHub Next Project: Can we enable anyone to create or adapt software for themselves, using AI and a fully-managed runtime?</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <p>I watched demos of this at GitHub Universe and it&rsquo;s pretty astounding. I&rsquo;ve been skeptical that AI was going to get to a point where you could just describe an idea and get accurate code from it, but we&rsquo;re already at that point.</p>
+  </dd>
+  <dt><a href="https://yuzukeycaps.com/keyboards/uhk?mc_cid=dc5fa8803a&amp;mc_eid=3484152cce">Custom keycaps for UHK</a></dt>
+  <dd>Design unique dye sub keycaps with UHK layout. Just for the Ultimate Hacking Keyboard users out there. <a href="https://www.instagram.com/p/DB4GYQdtMN1/?img_index=1">Here&rsquo;s what I did with it.</a></dd>
+</dl>
+
+<p><a href="https://brettterpstra.com///macpaw.7eer.net/c/228914/82479/1733"><img alt="CleanMyMac X" border="0" height="90" src="https://brettterpstra.com///a.impactradius-go.com/display-ad/1733-82479" width="728" /></a><img border="0" height="0" src="https://brettterpstra.com///macpaw.7eer.net/i/228914/82479/1733" width="0" /></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113470383467917133" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F12%2Fweb-excursions-for-november-10th-2024%2F&amp;text=Web+Excursions+for+November+12th%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F12%2Fweb-excursions-for-november-10th-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16884022.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-12T08:00:00-06:00</pubDate>
+<pubDate>2024-11-12T08:00:00-06:00</pubDate>
+</item>
+<item>
+<title>Monodraw giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16882624/monodraw-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16882624/monodraw-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Monodraw icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-monodraw2024-rb.jpg" title="Giveaway Robot with Monodraw icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 20 licenses ($9.99 value each) for <a href="https://monodraw.helftone.com/">Monodraw</a>. If you ever need to add ASCII art to a README or any text file, Monodraw is the best tool for creating it. From flow charts to mind maps, Monodraw&rsquo;s drawing tools make adding boxes, lines, shapes and text as simple as any graphic design program.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Plain text has been around for decades and it&rsquo;s here to stay. Monodraw allows you to easily create text-based art (like diagrams, layouts, flow charts) and visually represent algorithms, data structures, binary formats and more. Because it&rsquo;s all just text, it can be easily embedded almost anywhere.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Monodraw screenshot" class="aligncenter" height="532" src="https://cdn3.brettterpstra.com/uploads/2024/10/monodrawscreenshot-800.jpg" title="Monodraw screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://monodraw.helftone.com/">Monodraw</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, November 15, at 12pm Central. The drawing is for 20 licenses ($9.99 value each) for Monodraw, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/11/11/monodraw-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113465109197831156" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F11%2Fmonodraw-giveaway%2F&amp;text=Monodraw+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F11%2Fmonodraw-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16882624.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-11T09:38:00-06:00</pubDate>
+<pubDate>2024-11-11T09:38:00-06:00</pubDate>
+</item>
+<item>
+<title>The Name Mangler giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16882625/the-name-mangler-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16882625/the-name-mangler-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Name Mangler icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/namemangler2024-winners-rb.jpg" title="Giveaway Robot with Name Mangler icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Name Mangler giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Troy Patterson</li>
+  <li>Jim Simpson</li>
+  <li>René Quesnel</li>
+  <li>Billy Rowell</li>
+  <li>D. Lee Grooms</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://manytricks.com/namemangler/">Name Mangler is still worth checking out</a>. If you&rsquo;ve ever run into the need to rename a bunch of files quickly and accurately, you should try out Name Mangler. It&rsquo;s brilliant.</p>
+
+<p>Next up is <a href="https://monodraw.helftone.com/">Monodraw</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://agiletortoise.com/tally/">Tally</a></li>
+  <li><a href="https://www.alfredapp.com/">Alfred 5</a></li>
+  <li><a href="https://www.takecontrolbooks.com/">Take Control Books</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+  <li><a href="https://getdrafts.com/">Drafts</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F08%2Fthe-name-mangler-giveaway-winners%2F&amp;text=The+Name+Mangler+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F08%2Fthe-name-mangler-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16882625.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-08T13:00:00-06:00</pubDate>
+<pubDate>2024-11-08T13:00:00-06:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for November 6, 2024</title>
+<link>https://brett.trpstra.net/link/535/16876989/web-excursions-for-november-6-2024</link>
+<guid>https://brett.trpstra.net/link/535/16876989/web-excursions-for-november-6-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with <a href="https://www.mindmeister.com/?r=116987">MindMeister</a>, the best collaborative mind mapping software out there.</p>
+
+<dl>
+  <dt><a href="https://code.spafe.ru/">Spafe Code &ndash; AI Code Translator</a></dt>
+  <dd>Use AI to translate code from one language to another. Works really well in my brief testing. Copilot can probably do the same thing but I&rsquo;ve never thought to try.</dd>
+  <dt><a href="https://clemstation.com/apps/stretch-it">Stretch It</a></dt>
+  <dd>A simpler version of Gestimer, if that&rsquo;s possible. I love the utility of these gesture-based timers, where you just pull down from your menu bar to set a quick timer. Simple, useful.</dd>
+  <dt><a href="https://alfred.app/workflows/firefingers21/linkding-bookmarks/">linkding Bookmarks for Alfred</a></dt>
+  <dd>Search linkding bookmarks with Alfred. H/T Ralf Hülsmann.</dd>
+  <dt><a href="https://www.wikiwand.com/">Wikiwand - Wikipedia, and beyond</a></dt>
+  <dd>
+    <blockquote>
+      <p>AI-driven wiki aggregator created to enhance user experience on Wikipedia by streamlining knowledge consumption</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <p>Summarize articles and make them queryable while you browse. Another great use case for AI (I know I&rsquo;ve been linking a lot of that lately, but that&rsquo;s the world right now).</p>
+  </dd>
+  <dd>
+    <p>(Plus, great landing page design, check out the little widget for page customization previews.)</p>
+  </dd>
+</dl>
+
+<p><a href="https://www.mindmeister.com/?r=116987">Check out MindMeister and start brainstorming, collaborating, and boosting productivity.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113436407169112729" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F06%2Fweb-excursions-for-november-6-2024%2F&amp;text=Web+Excursions+for+November+6%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F06%2Fweb-excursions-for-november-6-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16876989.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-06T08:00:00-06:00</pubDate>
+<pubDate>2024-11-06T08:00:00-06:00</pubDate>
+</item>
+<item>
+<title>Name Mangler giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16874595/name-mangler-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16874595/name-mangler-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Name Mangler icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-namemangler2024-rb.jpg" title="Giveaway Robot with Name Mangler icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 5 licenses ($19 value each) for <a href="https://manytricks.com/namemangler/">Name Mangler</a>. Name Mangler is a brilliant piece of software designed specifically for renaming batches of files. You can build rulesets to handle all kinds of &ldquo;mangling,&rdquo; applying prefixes and suffixes, sequences, using image data to create placeholders like width and date&hellip; you name it, it will rename it.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Name Mangler is designed to make it super easy to rename batches of files &mdash; anywhere from a few to tens of thousands &mdash; in one quick operation. Tell Name Mangler which files to rename, set up your rules, then click one button and it&rsquo;s done.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Name Mangler screenshot" class="aligncenter" height="408" src="https://cdn3.brettterpstra.com/uploads/2024/10/namemangler-screenshot-800.jpg" title="Name Mangler screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://manytricks.com/namemangler/">Name Mangler</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, November 08, at 12pm Central. The drawing is for 5 licenses ($19 value each) for Name Mangler, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/11/04/name-mangler-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113425083222451407" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F04%2Fname-mangler-giveaway%2F&amp;text=Name+Mangler+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F04%2Fname-mangler-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16874595.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-04T08:00:00-06:00</pubDate>
+<pubDate>2024-11-04T08:00:00-06:00</pubDate>
+</item>
+<item>
+<title>The ScreenCastsONLINE giveaway winner!</title>
+<link>https://brett.trpstra.net/link/535/16872814/the-screencastsonline-giveaway-winner</link>
+<guid>https://brett.trpstra.net/link/535/16872814/the-screencastsonline-giveaway-winner</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with ScreenCastsONLINE icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/screencastsonline2024-winners-rb.jpg" title="Giveaway Robot with ScreenCastsONLINE icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The ScreenCastsONLINE giveaway has ended, and I have a winner to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Christian Arendt</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but ScreenCastsONLINE is still worth checking out. You&rsquo;ve got a lot to learn, and ScreenCastsONLINE is a super valuable source for for learning apps and tools. And you can get a 20% discount on your first subscription (week, month, or year) by <a href="https://screencastsonline.com/members/signup/terpstraspecial">using this link!</a></p>
+
+<p>Next up is <a href="https://manytricks.com/namemangler/">Name Mangler</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://monodraw.helftone.com/">Monodraw</a></li>
+  <li><a href="https://agiletortoise.com/tally/">Tally</a></li>
+  <li><a href="https://getdrafts.com/">Alfred 5</a></li>
+  <li><a href="https://www.takecontrolbooks.com/">Take Control Books</a></li>
+  <li><a href="https://www.git-tower.com/?via=brett">Tower</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113409125506491393" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F01%2Fthe-screencastsonline-giveaway-winner%2F&amp;text=The+ScreenCastsONLINE+giveaway+winner%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F01%2Fthe-screencastsonline-giveaway-winner%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16872814.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-01T13:00:00-05:00</pubDate>
+<pubDate>2024-11-01T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>linkding for SearchLink</title>
+<link>https://brett.trpstra.net/link/535/16872695/linkding-for-searchlink</link>
+<guid>https://brett.trpstra.net/link/535/16872695/linkding-for-searchlink</guid>
+<content:encoded><![CDATA[
+
+<p>I added <a href="https://linkding.link/">linkding</a> searching to <a href="https://brettterpstra.com//projects/searchlink">SearchLink</a> this morning. It works the same as <a href="https://github.com/ttscoff/searchlink/wiki/Searching-Pinboard">Pinboard searching</a>, just with <code class="language-plaintext highlighter-rouge">!ld</code> (or <code class="language-plaintext highlighter-rouge">!ding</code>) as the search shortcut. See the bottom of the Pinboard search page for configuration setup.</p>
+
+<p>No big deal, just updating to work with the tools I&rsquo;m using. Get the latest version of SearchLink on the <a href="https://brettterpstra.com//projects/searchlink">project page</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113408235961825738" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F01%2Flinkding-for-searchlink%2F&amp;text=linkding+for+SearchLink&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F11%2F01%2Flinkding-for-searchlink%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16872695.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-11-01T09:19:00-05:00</pubDate>
+<pubDate>2024-11-01T09:19:00-05:00</pubDate>
+</item>
+<item>
+<title>Archive linkding bookmarks to local Markdown</title>
+<link>https://brett.trpstra.net/link/535/16871753/archive-linkding-bookmarks-to-local-markdown</link>
+<guid>https://brett.trpstra.net/link/535/16871753/archive-linkding-bookmarks-to-local-markdown</guid>
+<content:encoded><![CDATA[
+
+<p>I&rsquo;ve completely switched from Pinboard to <a href="https://linkding.link/">linkding</a> for bookmarking. Mostly because Pinboard hasn&rsquo;t seen development in years, and the creator is getting a little&hellip; weird, which makes me wonder about its future. Pinboard still works fine, but linkding is actively developed, has mostly the same features, and can be hosted locally.</p>
+
+<p>I have my Web Excursions working perfectly with linkding, as well as some other integrations using the API. It&rsquo;s a little different from Pinboard, but not so much that porting scripts takes a lot of time. I even have inside information that Pins for Pinboard might have a linkding version soon. It would be excellent to have a UI for my bookmarks again.</p>
+
+<p>You can run linkding on any server that allows Docker images, or just do what I did and spin up a dedicated machine on <a href="https://www.pikapods.com/">PikaPods</a> for a couple bucks a month. The only thing that running your own bookmarking service lacks is the trending topics kind of stuff that Pinboard can do. (As an aside, I mentioned <a href="https://github.com/linkwarden/linkwarden" title="linkwarden/linkwarden:⚡️⚡️⚡️Self-hosted ...">LinkWarden</a> in my Web Excursions, and if you&rsquo;re looking for a self-hosted service that does archiving and has a prettier interface, it&rsquo;s a good choice. It just didn&rsquo;t quite fit my needs.)</p>
+
+<p>I do have a <a href="https://bookmarks.scoffb.in/bookmarks/shared?user=ttscoff">public page</a> for (and <a href="https://bookmarks.scoffb.in/feeds/shared?user=ttscoff">RSS feed</a>) for shared bookmarks, if you care to follow it.</p>
+
+<p><span class="pullquote left">
+One thing linkding doesn&rsquo;t have is archiving. That feature is available on Pinboard for an additional fee, but I&rsquo;m not sure how well it&rsquo;s working there these days. What linkding does offer is the ability to submit any page you bookmark to the Internet Archive, so it will be permanently accessible via the <a href="http://wayback.archive.org/" title="Wayback Machine">Wayback Machine</a>. That&rsquo;s a pretty reasonable option, really. Personally, I&rsquo;d rather have local Markdown files of any articles I want to reference in the future.
+</span></p>
+
+<p>I have <a href="https://gist.github.com/ttscoff/4974164772623e95e8a1ef46a3eec68a">this script</a> running in the background on my Mac mini server in my basement. Any bookmark I tag with <code class="language-plaintext highlighter-rouge">.archive</code> gets Markdownfied using <a href="https://brettterpstra.com/projects/gather-cli/" title="Gather CLI">Gather</a> (it can also use <a href="https://markdownrules.com">Marky</a> for web-based conversion) and saved as Markdown into a folder I use in <a href="https://nvultra.com/" title="nvUltra-Searchable, portable, MultiMarkdown notes">nvUltra</a>. The archives are just text files that will work with any app that can import them (Obsidian, DEVONthink, etc.). It&rsquo;s working great so far.</p>
+
+<p>You can change the tag it searches for, or leave that blank to just archive every bookmark. I don&rsquo;t want to do that with my 8,000 existing bookmarks, as a lot of them are just links to tools and apps that I don&rsquo;t need saved as notes. Linkding is perfectly searchable as a reference, and I have all of those links backed up anyway. I just want a searchable, portable archive of things like how-tos, programming solutions and articles that have text I&rsquo;d want to reference.</p>
+
+<p>With Markdown notes I can search the full text of the articles instead of just title and description, and the script includes all of the metadata from the bookmark (title, date added, tags, description, and notes) as YAML headers. For me, this is a better solution than archiving on the server. It&rsquo;s local and highly usable with any notes app, easy to back up and port between solutions.</p>
+
+<p>You can <a href="https://gist.github.com/ttscoff/4974164772623e95e8a1ef46a3eec68a">find the script here</a>. See the comments at the top for configuration and usage information.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113403008860164592" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F31%2Farchive-linkding-bookmarks-to-local-markdown%2F&amp;text=Archive+linkding+bookmarks+to+local+Markdown&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F31%2Farchive-linkding-bookmarks-to-local-markdown%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16871753.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-31T11:11:00-05:00</pubDate>
+<pubDate>2024-10-31T11:11:00-05:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for October 24, 2024</title>
+<link>https://brett.trpstra.net/link/535/16867321/web-excursions-for-october-24-2024</link>
+<guid>https://brett.trpstra.net/link/535/16867321/web-excursions-for-october-24-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Whether you&rsquo;re a new user or a seasoned pro, ScreenCastsONLINE offers in-depth screencasts on a wide range of topics, from tutorials to app discovery. <a href="https://screencastsonline.com/members/aff/go/bterpstra">Check it out.</a></p>
+
+<dl>
+  <dt><a href="https://docs.linkwarden.app/">Linkwarden</a></dt>
+  <dd>Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. The objective is to organize useful webpages and articles you find across the web in one place, and since useful webpages can go away (see the inevitability of Link Rot), Linkwarden also saves a copy of each webpage as a Screenshot and PDF, ensuring accessibility even if the original content is no longer available. H/T Eric Beavers.</dd>
+  <dt><a href="https://github.com/sissbruecker/linkding/">sissbruecker/linkding</a></dt>
+  <dd>Self-hosted bookmark manager that is designed be to be minimal, fast, and easy to set up using Docker. Great 1:1 replacememt for Pinboard, if you&rsquo;re looking to switch (allows custom CSS!)</dd>
+  <dt><a href="https://www.pikapods.com/">PikaPods - Instant Open Source App Hosting</a></dt>
+  <dd>Run the finest Open Source web apps from $1/month, fully managed, no tracking, no ads, full privacy. Self-hosting was never this convenient.</dd>
+  <dd>
+    <p>This is a great way to run your own LinkDing server.</p>
+  </dd>
+  <dt><a href="https://sindresorhus.com/supercharge">Supercharge</a></dt>
+  <dd>Cool little Mac app that just adds some tweaks to the OS. I already have shortcuts to most of what it does, but re-creating the TotalFinder visor idea is pretty cool. Shareware.</dd>
+  <dt><a href="https://www.usebruno.com/">bruno</a></dt>
+  <dd>An API client that uses plain text language to create API request collections, syncable with Git, and a great replacement for Postman, Insomnia, and other tools. Open source.</dd>
+  <dt><a href="https://apps.apple.com/us/app/beorg-to-do-list-agenda/id1238649962">beorg: To-Do List &amp; Agenda</a></dt>
+  <dd>Similar in concept to Noteplan (todos mixed with notes, plain text storage), but using Org mode files, syncable with any cloud service. iOS/WatchOS only, but the files are accessible with Emacs or other editor anywhere. From the creator of TrunkNotes, which was one of my favorite personal wikis back in the day.</dd>
+</dl>
+
+<p>Want more great tips and apps? Check out <a href="https://screencastsonline.com/members/aff/go/bterpstra">ScreenCastsOnline</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113386156235447416" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F28%2Fweb-excursions-for-october-24-2024%2F&amp;text=Web+Excursions+for+October+24%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F28%2Fweb-excursions-for-october-24-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16867321.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-28T12:00:00-05:00</pubDate>
+<pubDate>2024-10-28T12:00:00-05:00</pubDate>
+</item>
+<item>
+<title>ScreenCastsONLINE giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16867162/screencastsonline-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16867162/screencastsonline-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with ScreenCastsONLINE icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-screencastsonline2024-rb.jpg" title="Giveaway Robot with ScreenCastsONLINE icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, a 1-year subscription ($89.99) for <a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a>. I&rsquo;ve learned so much from ScreenCastsONLINE. For tips, tricks, and in-depth how-tos on everything from OmniFocus to Obsidian, you can&rsquo;t beat their informative and excellently-made videos. This 1-year subscription opens up a plethora of knowledge.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Get the Most Out Of Your Apple Devices! Unlock your full potential with ScreenCastsONLINE’s step-by-step video tutorials and stay on top of the latest Apple devices and applications. ScreenCastsONLINE has been providing two videos per week for over 19 years so you can have access to the full archive and find videos to help you maximise your usage of your Mac, iPhone, iPad and Apple Watch. No matter who you are, or what your skill level is, ScreenCastsONLINE has something to offer everyone.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="ScreenCastsONLINE screenshot" class="aligncenter" height="602" src="https://cdn3.brettterpstra.com/uploads/2024/10/screencastsonline-screenshot.jpg" title="ScreenCastsONLINE screenshot" width="1063" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a> site for more info.</p>
+
+<p>Sign up below to enter. A winner will be randomly drawn on Friday, November 01, at 12pm Central. The drawing is for 1-year subscription ($89.99) for ScreenCastsONLINE. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/10/28/screencastsonline-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113385213614059030" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F28%2Fscreencastsonline-giveaway%2F&amp;text=ScreenCastsONLINE+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F28%2Fscreencastsonline-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16867162.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-28T08:00:00-05:00</pubDate>
+<pubDate>2024-10-28T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>The Typora giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16865701/the-typora-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16865701/the-typora-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Typora icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/typora2024-winners-rb.jpg" title="Giveaway Robot with Typora icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Typora giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Nicola Losito</li>
+  <li>Jonathan Clark</li>
+  <li>Michael Harrington</li>
+  <li>Curtis Spendlove</li>
+  <li>Neil Anderson</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://typora.io/">Typora is still worth checking out</a>. If you want a clean, flexible Markdown writing experience (or want to learn Markdown and improve your writing process), Typora is a perfect fit. You can still save 20% with coupon <code class="language-plaintext highlighter-rouge">brett</code> at checkout (good until October 31st).</p>
+
+<p>Next up is <a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://manytricks.com/namemangler/">Name Mangler</a></li>
+  <li><a href="https://monodraw.helftone.com/">Monodraw</a></li>
+  <li><a href="https://agiletortoise.com/tally/">Tally</a></li>
+  <li><a href="https://getdrafts.com/">Alfred 5</a></li>
+  <li><a href="https://www.takecontrolbooks.com/">Take Control Books</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113370952149135566" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F25%2Fthe-typora-giveaway-winners%2F&amp;text=The+Typora+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F25%2Fthe-typora-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16865701.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-25T13:00:00-05:00</pubDate>
+<pubDate>2024-10-25T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for October 22, 2024</title>
+<link>https://brett.trpstra.net/link/535/16862230/web-excursions-for-october-22-2024</link>
+<guid>https://brett.trpstra.net/link/535/16862230/web-excursions-for-october-22-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with CleanShot X, the absolute, hands-down best app for Mac screenshots. <a href="https://cleanshot.sjv.io/DKRzyd">Get one of my all-time favorite apps here.</a></p>
+
+<p>What? Two web excursions in 7 days? In this economy? I just found some extra stuff over the weekend&hellip;</p>
+
+<dl>
+  <dt><a href="https://busy.bar/">Busy Status Bar — Productivity Multi-tool Device with an LED pixel screen</a></dt>
+  <dd>Displays a personal busy message. Built-in Pomodoro timer and Apps. Fully customizable, open-source, and hacker-friendly</dd>
+  <dt><a href="https://apps.apple.com/us/app/homebatteries-for-homekit/id6450958030">HomeBatteries for HomeKit on the App Store</a></dt>
+  <dd>HomeBatteries makes it super quick &amp; easy to see all of your HomeKit accessory batteries in one location.</dd>
+  <dt><a href="https://www.playnode.app/">Playnode</a></dt>
+  <dd>An interesting node-based interface for using various LLMs to create text content visually. Free plan offers 20 credits/week.</dd>
+  <dt><a href="https://jsx.design/">JSX.design</a></dt>
+  <dd>No-code WYSIWYG editor for React. Drag and drop components and produce clean code.</dd>
+</dl>
+
+<p>I do all of my screenshots and screen recordings with CleanShot X. I love it to pieces. <a href="https://cleanshot.sjv.io/DKRzyd">You should get it.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113351235820923799" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F22%2Fweb-excursions-for-october-22-2024%2F&amp;text=Web+Excursions+for+October+22%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F22%2Fweb-excursions-for-october-22-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16862230.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-22T08:00:00-05:00</pubDate>
+<pubDate>2024-10-22T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Typora giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16861059/typora-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16861059/typora-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Typora icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-typora2024-rb.jpg" title="Giveaway Robot with Typora icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 5 licenses ($14.99 value each) for <a href="https://typora.io/">Typora</a>. Want to write Markdown without seeing Markdown? Typora offers a full Markdown editing experience that hides the symbols and syntax of Markdown, making your work easily readable and distraction free. It&rsquo;s the ease of Markdown combined with a What You See Is What You Mean experience.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Typora gives you a seamless experience as both a reader and a writer. It removes the preview window, mode switcher, syntax symbols of markdown source code, and all other unnecessary distractions. Instead, it provides a real live preview feature to help you concentrate on the content itself.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Typora screenshot" class="aligncenter" height="536" src="https://cdn3.brettterpstra.com/uploads/2024/10/typora-screenshot.jpg" title="Typora screenshot" width="1194" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://typora.io/">Typora</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, October 25, at 12pm Central. The drawing is for 5 licenses ($14.99 value each) for Typora, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/10/21/typora-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113345573750520782" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F21%2Ftypora-giveaway%2F&amp;text=Typora+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F21%2Ftypora-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16861059.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-21T08:00:00-05:00</pubDate>
+<pubDate>2024-10-21T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for October 19, 2024</title>
+<link>https://brett.trpstra.net/link/535/16859872/web-excursions-for-october-19-2024</link>
+<guid>https://brett.trpstra.net/link/535/16859872/web-excursions-for-october-19-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with NordVPN. <a href="https://nordvpn.sjv.io/4Pgnm0">Secure your internet browsing effectively and affordably.</a></p>
+
+<dl>
+  <dt><a href="https://indigostack.app/">IndigoStack</a></dt>
+  <dd>This is really cool. Bare metal performance for local web development stacks. Run multiple stacks with https, reverse proxies, whatever tech you need &mdash; no Docker, no VMs, full terminal integration. Really well done.</dd>
+  <dt><a href="https://www.thoughtasylum.com/2024/10/05/a-quick-tip-for-using-moom-in-bunch/">A Quick Tip For Using Moom in Bunch</a></dt>
+  <dd>Great post from Stephen Millard on using Moom 4 with Bunch. Lots of tips!</dd>
+  <dt><a href="https://copy-repo.vercel.app/">Copy Repo</a></dt>
+  <dd>Copy/Paste the content of any Github repository for use in your LLM of choice. Filterable by file type.</dd>
+  <dt><a href="https://github.com/ttscoff/confluence2md">ttscoff/confluence2md</a></dt>
+  <dd>I made this specifically for the internal docs team at Oracle, but figured other people may find a use for it. It takes an HTML export dump from Confluence and converts it to Markdown (specifically Python markdown, but could easily be modified for other formats). Great for converting Confluence documentation wikis into GitHub/GitLab pages.</dd>
+</dl>
+
+<p>NordVPN secures your internet browsing, plus it can make it look to services like you&rsquo;re coming from any country. <a href="https://nordvpn.sjv.io/4Pgnm0">Check it out today.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113334953346062517" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F19%2Fweb-excursions-for-october-19-2024%2F&amp;text=Web+Excursions+for+October+19%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F19%2Fweb-excursions-for-october-19-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16859872.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-19T10:58:00-05:00</pubDate>
+<pubDate>2024-10-19T10:58:00-05:00</pubDate>
+</item>
+<item>
+<title>The OmniPlan giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16858577/the-omniplan-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16858577/the-omniplan-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with OmniPlan icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/omniplan2024-winners-rb.jpg" title="Giveaway Robot with OmniPlan icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The OmniPlan giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Ishan Mahapatra</li>
+  <li>Chris Messina</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://www.omnigroup.com/omniplan">OmniPlan is still worth checking out</a>. OmniPlan is totally worth checking out, and worth the price. <a href="https://www.omnigroup.com/omniplan">Get organized and manage your projects</a>!</p>
+
+<p>Next up is <a href="https://typora.io/">Typora</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a></li>
+  <li><a href="https://manytricks.com/namemangler/">Name Mangler</a></li>
+  <li><a href="https://monodraw.helftone.com/">Monodraw</a></li>
+  <li><a href="https://agiletortoise.com/tally/">Tally</a></li>
+  <li><a href="https://getdrafts.com/">Alfred 5</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113329782536334809" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F18%2Fthe-omniplan-giveaway-winners%2F&amp;text=The+OmniPlan+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F18%2Fthe-omniplan-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16858577.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-18T13:00:00-05:00</pubDate>
+<pubDate>2024-10-18T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>OmniPlan giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16843137/omniplan-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16843137/omniplan-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with OmniPlan icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-omniplan2024-rb.jpg" title="Giveaway Robot with OmniPlan icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 2 Universal Standard licenses ($199.99 value each) for <a href="https://www.omnigroup.com/omniplan">OmniPlan</a>. OmniPlan is the ultimate way to manage a project, seeing all of the moving parts at once with start and end dates for tasks, Gantt charts, support for automation workflows, and a project assistant to provide extra functionality. Multi-project dashboards make managing complex projects in your life/work a breeze. This giveaway is for a universal license that will cover you on macOS, iOS, and visionOS.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Used by top-tier Fortune 500 technology companies, production companies, construction firms and other industries, OmniPlan helps anyone with a complex project wrangle the complexity into submission, scope out needed resources, schedule required steps, and manage execution to achieve their goals on time and on budget.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="OmniPlan screenshot" class="aligncenter" height="504" src="https://cdn3.brettterpstra.com/uploads/2023/09/omniplan-screenshot-800.jpg" title="OmniPlan screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://www.omnigroup.com/omniplan">OmniPlan</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, October 18, at 12pm Central. The drawing is for 2 Universal Standard licenses ($199.99 value each) for OmniPlan, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/10/14/omniplan-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through March, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113305939093819505" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F14%2Fomniplan-giveaway%2F&amp;text=OmniPlan+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F14%2Fomniplan-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16843137.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-14T08:00:00-05:00</pubDate>
+<pubDate>2024-10-14T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>The Eloquent Javascript (e-book) giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16840999/the-eloquent-javascript-e-book-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16840999/the-eloquent-javascript-e-book-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Eloquent Javascript (e-book) icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/eloquent2024-winners-rb.jpg" title="Giveaway Robot with Eloquent Javascript (e-book) icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Eloquent Javascript (e-book) giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Ciaran Connelly</li>
+  <li>Davide Ricci</li>
+  <li>Ingo Fischer</li>
+  <li>Jasper Lai</li>
+  <li>Scott Kopelchuk</li>
+  <li>Peter Trist</li>
+  <li>Tristan Wren</li>
+  <li>J. Bolton</li>
+  <li>Matthias Rempe</li>
+  <li>Dave Robeson</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript is still worth checking out</a>. If you&rsquo;re a Javascript developer, new or old, this book has great info and tips for you. You can still save 30% off of the purchase price using the code <code class="language-plaintext highlighter-rouge">BRETT30</code> at <a href="https://nostarch.com/eloquent-javascript-4th-edition">checkout</a>.</p>
+
+<p>Next up is <a href="https://www.omnigroup.com/omniplan">OmniPlan</a>. Check back every Monday through March, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://typora.io/">Typora</a></li>
+  <li><a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a></li>
+  <li><a href="https://manytricks.com/namemangler/">Name Mangler</a></li>
+  <li><a href="https://monodraw.helftone.com/">Monodraw</a></li>
+  <li><a href="https://agiletortoise.com/tally/">Tally</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113290200891384110" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F11%2Fthe-eloquent-javascript-e-book-giveaway-winners%2F&amp;text=The+Eloquent+Javascript+%28e-book%29+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F11%2Fthe-eloquent-javascript-e-book-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16840999.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-11T13:00:00-05:00</pubDate>
+<pubDate>2024-10-11T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Eloquent Javascript (e-book) giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16835963/eloquent-javascript-e-book-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16835963/eloquent-javascript-e-book-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Eloquent Javascript (e-book) icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-eloquent2024-rb.jpg" title="Giveaway Robot with Eloquent Javascript (e-book) icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 10 copies of <a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript</a> ($39.99 value each). Whether you&rsquo;re just getting into web development or are an old hand, this book contains excellent knowledge and tips for Javascript developers. The latest edition updates for current web development practices and tools.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>The fourth edition of this classic textbook takes you on a journey through the language of the web, starting from its basic elements and building up to engaging, complete programs. The author’s personal experiences from years of maintaining popular open source projects enliven the text with practical insights and examples.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                
+                
+                <source />
+                <img alt="Eloquent Javascript (e-book) screenshot" class="alignright" height="0" src="https://cdn3.brettterpstra.com/uploads/2024/09/eloquent-cover.jpg" title="Eloquent Javascript (e-book) screenshot" width="0" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript (e-book)</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, October 11, at 12pm Central. The drawing is for 10 e-books ($39.99 value each) for Eloquent Javascript (e-book), one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/10/07/eloquent-javascript-e-book--giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through January, 2025</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F07%2Feloquent-javascript-e-book-giveaway%2F&amp;text=Eloquent+Javascript+%28e-book%29+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F07%2Feloquent-javascript-e-book-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16835963.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-07T08:00:00-05:00</pubDate>
+<pubDate>2024-10-07T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>The Moom giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16834131/the-moom-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16834131/the-moom-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Moom icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/moom2024-winners-rb.jpg" title="Giveaway Robot with Moom icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Moom giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Hadi Zainudin</li>
+  <li>Dan McClain</li>
+  <li>Nate Terpstra</li>
+  <li>Tracy Jenkins</li>
+  <li>Gavin Jerman</li>
+  <li>Marco Onderstal</li>
+  <li>John Miller</li>
+  <li>Kris Schofield</li>
+  <li>Cristobal Torres-Velez</li>
+  <li>Michail Litke</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://manytricks.com/moom/">Moom is still worth checking out</a>. I can&rsquo;t think of anyone on a Mac who couldn&rsquo;t use better window management. Moom is the best in the biz. You can use the coupon <code class="language-plaintext highlighter-rouge">BT-DISCOUNT-24</code> to save 15% on a purchase or upgrade.</p>
+
+<p>Next up is <a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript (e-book)</a>. Check back every Monday through January, 2025 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+  <li><a href="https://typora.io/">Typora</a></li>
+  <li><a href="https://www.screencastsonline.com/?ref=bterpstra">ScreenCastsONLINE</a></li>
+  <li><a href="https://manytricks.com/namemangler/">Name Mangler</a></li>
+  <li><a href="https://monodraw.helftone.com/">Monodraw</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113250567225867437" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F04%2Fthe-moom-giveaway-winners%2F&amp;text=The+Moom+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F04%2Fthe-moom-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16834131.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-04T13:00:00-05:00</pubDate>
+<pubDate>2024-10-04T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for October 04, 2024</title>
+<link>https://brett.trpstra.net/link/535/16834045/web-excursions-for-october-04-2024</link>
+<guid>https://brett.trpstra.net/link/535/16834045/web-excursions-for-october-04-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with Backblaze. <a href="https://secure.backblaze.com/r/00dszk">Back up everything.</a></p>
+
+<dl>
+  <dt><a href="https://themes.vscode.one/">Create VS Code Themes Easily - Theme Studio - The VS Code Theme Editor</a></dt>
+  <dd>I&rsquo;ve switched to VS Code (finally) and I&rsquo;m mostly loving it. Started playing around with porting my favorite things and found VS Code Theme Studio. It&rsquo;s &ldquo;the easiest way to create a theme for VS Code. It&rsquo;s a browser-based theme editor for Visual Studio Code Themes. You can easily design beautiful, polished themes, and deploy them to the VS Code Marketplace.&rdquo;</dd>
+  <dt><a href="https://actionnetwork.org/fundraising/mutual-aid-disaster-relief?source=direct_link&amp;">Support Mutual Aid Disaster Relief - Action Network</a></dt>
+  <dd>A great place to donate to hurricane recovery in the North Carolina region. Put your money directly in the hands of people doing the work.</dd>
+  <dt><a href="https://intech.studio/us/shop">Intech Studio - Midi Grid controllers and accessories</a></dt>
+  <dd>I have no more room on my desk for more controllers, and I&rsquo;ve fallen out of the habit of making music, but these are so tempting. Cute and modular. I think I just like buttons&hellip;</dd>
+  <dt><a href="https://github.com/rhulse/ruby-css-toolkit/tree/master">rhulse/ruby-css-toolkit: Some tools for compressing CSS</a></dt>
+  <dd>Some tools for compressing and tidying CSS with Ruby. I&rsquo;m using this port of the YUI compressor in Conductor and Marky and it works really well.</dd>
+</dl>
+
+<p>Backblaze securely backs up your entire computer to the cloud, affordably and reliably. I trust it with all my data. <a href="https://secure.backblaze.com/r/00dszk">Check it out today.</a></p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113249999042649957" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F04%2Fweb-excursions-for-october-04-2024%2F&amp;text=Web+Excursions+for+October+04%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F10%2F04%2Fweb-excursions-for-october-04-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16834045.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-10-04T10:50:00-05:00</pubDate>
+<pubDate>2024-10-04T10:50:00-05:00</pubDate>
+</item>
+<item>
+<title>Moom giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16826102/moom-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16826102/moom-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Moom icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-moom2024-rb.jpg" title="Giveaway Robot with Moom icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 10 licenses ($15 value each) for <a href="https://manytricks.com/moom/">Moom</a>. Whether you know it yet or not, window management on a Mac can change your computing life. Imagine being able to fly windows into organized dimensions and locations with the click of a button or the press of a key. Moom is the best app for managing windows that I&rsquo;ve found, and I get lost without it these days.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>With its wide variety of window management tools, Moom makes moving and resizing windows fast, easy, and if you&rsquo;re as geeky as we are, even fun.</p>
+</blockquote>
+
+<p>If you haven&rsquo;t checked Moom out recently, you&rsquo;ll be floored by the <a href="https://manytricks.com/blog/?p=6385">improvements in version 4</a>. It&rsquo;s a doubling (quadrupling?) of everything that was already cool about Moom. If you&rsquo;re a current Moom user who hasn&rsquo;t upgraded, this giveaway will get you a free license for all the new goodness.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Moom screenshot" class="aligncenter" height="519" src="https://cdn3.brettterpstra.com/uploads/2024/08/moom-screenshot-800.jpg" title="Moom screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://manytricks.com/moom/">Moom</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, October 04, at 12pm Central. The drawing is for 10 licenses ($15 value each) for Moom, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/09/30/moom-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through October, 2024</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113226672002958706" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F30%2Fmoom-giveaway%2F&amp;text=Moom+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F30%2Fmoom-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16826102.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-30T08:00:00-05:00</pubDate>
+<pubDate>2024-09-30T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Marky 2.0</title>
+<link>https://brett.trpstra.net/link/535/16825237/marky-2-dot-0</link>
+<guid>https://brett.trpstra.net/link/535/16825237/marky-2-dot-0</guid>
+<content:encoded><![CDATA[
+
+<p>I recently <a href="https://brettterpstra.com/2024/09/15/marky-is-back/">revived Marky the Markdownfier</a>. In case you missed it, Marky turns any web page into clippable Markdown for storage in notes/organization apps. And I could have left well enough alone, but there were a couple of quirks I wanted to fix. That led to&hellip; well, a complete ground-up rewrite of Marky. The old version and the old bookmarklets should continue to function, but the API at <code class="language-plaintext highlighter-rouge">/api/2</code> is completely overhauled to be more accurate and more versatile. The main UI at <a href="https://markdownrules.com">your choice of versions</a> now points to the v2 API, and the bookmarklets it generates make use of the new improvements.</p>
+
+<p>The API is similar but expanded for v2. See the <a href="https://heckyesmarkdown.com/api/">API docs</a> for full info. This is still somewhat a work in progress, but I promise not to break any existing functionality if you start using the API or the bookmarklets today.</p>
+
+<p><span class="pullquote left">
+Among the new features is the ability to output links for nvUltra and Obsidian, as well as links to open a preview in Marked 2. From any preview page you can click on &ldquo;Clip to&hellip;&rdquo; to immediately access these links. They can also be returned via the API as raw links, redirect pages, or as part of a JSON blob for incorporation in other workflows.
+</span></p>
+
+<p>The Readability engine (the part of Marky that removes ads, sidebars, menus, etc.) is completely custom now. It&rsquo;s a little more lax than the previous version, meaning it occasionally includes things like comment blocks (sans comments) and other small periphery, but is <em>way</em> better at getting <em>all</em> relevant content on a page regardless of markup. Nothing will ever be 100% perfect across every possible markup style on the web, but this does a really good job in testing. You can enable or disable readability from any preview page or via the <code class="language-plaintext highlighter-rouge">readability=[0|1]</code> parameter in any Marky URL or when calling the API outside of a browser.</p>
+
+<p><span class="pullquote left">
+There&rsquo;s improved handling for StackExchange pages, including StackOverflow. The question will be at the top, any accepted answer will be at the top of the answers, and then additional answers and their comments will be ranked by upvotes and included in descending order. Comments are added as block quotes and should be easily parseable in both Markdown format and rendered HTML output. There&rsquo;s also handling for GitHub repos (READMEs), raw GitHub files, and Gists. If there&rsquo;s a site you frequently clip from that you think could benefit from custom parsing, let me know. I love using Marky for saving StackOverflow answers for easy searching later (in nvUltra, of course).
+</span></p>
+
+<p>In addition to bookmarklets, this API should work well with Shortcuts on Mac, or with any tool that can query a REST API and handle JSON returns. I haven&rsquo;t dug into all of the integrations possible yet, but will post anything I discover when I have a chance to look at it further.</p>
+
+<p><span class="pullquote left">
+Speaking of bookmarklets, the main page now has a &ldquo;Bookmarklet&rdquo; link underneath the submission form, allowing you to generate a bookmarklet for any combination of settings. This link reflects the current settings of the form, minus the URL, and you can drag it to your toolbar to repeat the settings on any web page. The link updates every time you change a setting on the form. The bookmarklets always opens a popup window now, as the vast majority of sites no longer allow remote scripts to be called from within the page, which is the way all the old bookmarklets worked. And bookmarklets are getting increasingly harder to use, especially in Chromium browsers, so I&rsquo;ll be adding a Chrome extension generator eventually. I already have one written for this site that generates an extension for every bookmarklet &mdash; I just need to port it to Marky.
+</span></p>
+
+<p><span class="pullquote left">
+I also added support for almost every text output style that <a href="https://pandoc.org/">Pandoc</a> supports. This includes LaTeX and Textile formats, and the setting for these is also included in any bookmarklet. If you&rsquo;re going to the main UI and pasting, you can select an output format from the dropdown, and your current selection will be remembered for future visits. On the results page there&rsquo;s a menu on the left (click the arrow) that will allow you to change settings and resubmit the same URL with different parameters.
+</span></p>
+
+<p>Like the old version of Marky, the Markdown output on the web is syntax highlighted, and reference format links can be clicked to display their destination. Clicking the copy button will copy the Markdown (or whatever markup you selected) text without any of the highlighting or scripts. If the HTML preview is showing when the Copy button is clicked, a Rich Text version of the contents will be copied to the clipboard, which is great for adding web pages to non-Markdown notes apps.</p>
+
+<p>Marky&rsquo;s most common failures are on pages that are generated by Javascript. Marky currently only works on pages that have actual content in the source of the page. I may at some point try to add something like PhantomJS support to render pages completely before grabbing the source, but that&rsquo;s a distant future idea. Other future ideas include DOCX and PDF conversion to Markdown, and the ability to output RTF, DOCX, and PDF versions of the results. You can currently send raw HTML directly to Marky, bypassing the Readability functionality, and get Markdownified results, so if you have your own version of Readability or want to use it with something like <a href="https://brettterpstra.com/2013/07/30/precise-web-clipping-to-markdown-with-bullseye/">Bullseye</a>, it&rsquo;s still capable of doing so.<sup id="fnref:bullseyeupdate"><a class="footnote" href="https://brettterpstra.com#fn:bullseyeupdate" rel="footnote">1</a></sup></p>
+
+<p><a href="https://markdownrules.com">Check it out</a>, put it through its paces, and please <a href="https://brettterpstra.com//contact">report non-working pages to me</a>. I&rsquo;ll do my best to keep evolving the Readability and conversion processes to handle as wide a range of pages as possible. Obvious failures (like no content returned) are logged (without any user-identifying information) for my own review, but a quick email will still be helpful.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:bullseyeupdate">
+      <p>I do intend to try to re-create Bullseye within newer browser restrictions. It will probably have to be an extension, which means multiple extensions for multiple browsers, and ugh&hellip;&nbsp;<a class="reversefootnote" href="https://brettterpstra.com#fnref:bullseyeupdate">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113222407059398550" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F29%2Fmarky-2-dot-0%2F&amp;text=Marky+2.0&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F29%2Fmarky-2-dot-0%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16825237.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-29T13:55:00-05:00</pubDate>
+<pubDate>2024-09-29T13:55:00-05:00</pubDate>
+</item>
+<item>
+<title>The Screen Studio giveaway winner!</title>
+<link>https://brett.trpstra.net/link/535/16824785/the-screen-studio-giveaway-winner</link>
+<guid>https://brett.trpstra.net/link/535/16824785/the-screen-studio-giveaway-winner</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Screen Studio icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/screenstudio2024-winners-rb.jpg" title="Giveaway Robot with Screen Studio icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Screen Studio giveaway has ended, and I have a winner to announce!</p>
+
+<h3 id="the-winner">The winner!</h3>
+
+<p>Congratulations to Graham Hall!</p>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio is still worth checking out</a>. If you do any kind of screencasting or video documentation, Screen Studio will save you a ton of time and produce outstanding videos. The first 10 people to use the code <code class="language-plaintext highlighter-rouge">TTSCOFF20</code> will get 20% off their purchase of the Standard edition &mdash; <a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">go grab it!</a></p>
+
+<p>Next up is <a href="https://manytricks.com/moom/">Moom</a>. Check back every Monday through October, 2024 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript (e-book)</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F27%2Fthe-screen-studio-giveaway-winner%2F&amp;text=The+Screen+Studio+giveaway+winner%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F27%2Fthe-screen-studio-giveaway-winner%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16824785.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-27T13:00:00-05:00</pubDate>
+<pubDate>2024-09-27T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Screen Studio giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16818167/screen-studio-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16818167/screen-studio-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Screen Studio icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-screenstudio2024-rb.jpg" title="Giveaway Robot with Screen Studio icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 1 Standard license ($89 value) for <a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio</a>. I&rsquo;ve long used ScreenFlow to create screencasts, and then discovered Screen Studio (thanks Mike Schmitz). If you just need to create a beautiful screencast with adjustable background, window zooming, and cursor enhancing/smoothing, Screen Studio does it all automatically. You just hit record and it does the rest. Brilliant.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Screen Studio is an opinionated screen recorder that makes your videos look beautiful. It automatically zooms in on your cursor, increases cursor size and smooths its movements.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Screen Studio screenshot" class="aligncenter" height="488" src="https://cdn3.brettterpstra.com/uploads/2024/07/screenstudio-screenshot-800.jpg" title="Screen Studio screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio</a> site for more info.</p>
+
+<p>Sign up below to enter. A winner will be randomly drawn on Friday, September 27, at 12pm Central. The drawing is for 1 Standard license ($89 value) for Screen Studio. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/09/23/screen-studio-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through October, 2024</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113187030169108741" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F23%2Fscreen-studio-giveaway%2F&amp;text=Screen+Studio+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F23%2Fscreen-studio-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16818167.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-23T08:00:00-05:00</pubDate>
+<pubDate>2024-09-23T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Web Excursions for September 20, 2024</title>
+<link>https://brett.trpstra.net/link/535/16815563/web-excursions-for-september-20-2024</link>
+<guid>https://brett.trpstra.net/link/535/16815563/web-excursions-for-september-20-2024</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Brett holding map" class="aligncenter" height="349" src="https://cdn3.brettterpstra.com/uploads/2017/03/web-exc-map.jpg" title="Brett holding map" width="800" />
+              </noscript>
+            
+
+<p>Web excursions brought to you in partnership with Setapp. <a href="https://go.setapp.com/stp44">Get access to hundreds of Mac and iOS apps for one low monthly subscription fee.</a></p>
+
+<dl>
+  <dt><a href="https://usage.jdx.dev/">Usage</a></dt>
+  <dd>A schema for CLIs that can be used to generate man pages, Markdown, and shell completion scripts. I might have to start implementing this&hellip;</dd>
+  <dt><a href="https://osstatus.com/search/results">OSStatus — Apple API Errors</a></dt>
+  <dd>Look up those inscrutable Apple OS Error codes easily.</dd>
+  <dt><a href="https://www.warp.dev/ai">Agent Mode in Warp AI</a></dt>
+  <dd>There are a bunch of caveats to the service, but I love that Warp integrated AI command help in the command line just by recognizing natural language. You no longer have to load a panel or anything, just ask for help at the prompt. Pretty cool.</dd>
+  <dt><a href="https://kindavim.app/">kindaVim</a></dt>
+  <dd>Add Vim mode to any macOS text field. Works pretty well! Free trial only allows usage during a certain period of the day, kind of a clever limited trial.</dd>
+</dl>
+
+<p><a href="https://go.setapp.com/stp44">Check out Setapp</a> today and get access to the best Mac and iOS apps out there.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113171585474061052" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F20%2Fweb-excursions-for-september-20-2024%2F&amp;text=Web+Excursions+for+September+20%2C+2024&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F20%2Fweb-excursions-for-september-20-2024%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16815563.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-20T14:32:00-05:00</pubDate>
+<pubDate>2024-09-20T14:32:00-05:00</pubDate>
+</item>
+<item>
+<title>The Keep It giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16815532/the-keep-it-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16815532/the-keep-it-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Keep It icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/keepit2024-winners-rb.jpg" title="Giveaway Robot with Keep It icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The Keep It giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Toni Martinez</li>
+  <li>Jan Dammshäuser</li>
+  <li>Alex Trecartin</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://reinventedsoftware.com/keepit/">Keep It is still worth checking out</a>. Especially if you&rsquo;re looking to own your own data (ahem, Evernote) and still have all the necessary tools for organizing, searching, and referencing you documents, notes, web links, images, and files, Keep It is a great tool. You can still save 20% off with the code <code class="language-plaintext highlighter-rouge">BRETT2024</code> when <a href="https://reinventedsoftware.com/store/buy?item=KPTA2000">purchasing directly</a>!</p>
+
+<p>Next up is <a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio</a>. Check back every Monday through October, 2024 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://manytricks.com/moom/">Moom</a></li>
+  <li><a href="https://nostarch.com/eloquent-javascript-4th-edition">Eloquent Javascript (e-book)</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113171242962030143" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F20%2Fthe-keep-it-giveaway-winners%2F&amp;text=The+Keep+It+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F20%2Fthe-keep-it-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16815532.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-20T13:00:00-05:00</pubDate>
+<pubDate>2024-09-20T13:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Keep It giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16810187/keep-it-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16810187/keep-it-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with Keep It icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-keepit2024-rb.jpg" title="Giveaway Robot with Keep It icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 3 1-year subscriptions ($40 value each) for Mac and iOS for <a href="https://reinventedsoftware.com/keepit/">Keep It</a>. Keep It from Reinvented Software is the perfect tool for people who want to collect notes, documents, web links, and more without locking their data into something like Evernote. If you&rsquo;ve been tempted by something like DEVONthink but the learning curve seems steep, Keep It probably has all the power you need. Tagging, sorting, and advanced searching make it a great tool for keeping track of everything.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Keep It is a notebook and organizer, ideal for writing notes, saving web links, storing documents, images or any kind of file, and finding them again. Keep It is the destination for all those things you want to put somewhere, confident you will find them again later.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Keep It screenshot" class="aligncenter" height="500" src="https://cdn3.brettterpstra.com/uploads/2024/01/keepit-screenshot-800.jpg" title="Keep It screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://reinventedsoftware.com/keepit/">Keep It</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, September 20, at 12pm Central. The drawing is for 3 1-year subscriptions ($40 value each) for Mac and iOS for Keep It, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/09/16/keep-it-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through October, 2024</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113147416586588763" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F16%2Fkeep-it-giveaway%2F&amp;text=Keep+It+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F16%2Fkeep-it-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16810187.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-16T08:00:00-05:00</pubDate>
+<pubDate>2024-09-16T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Marky is back</title>
+<link>https://brett.trpstra.net/link/535/16809038/marky-is-back</link>
+<guid>https://brett.trpstra.net/link/535/16809038/marky-is-back</guid>
+<content:encoded><![CDATA[
+
+<p>I finally fixed <a href="https://markdownrules.com/">Marky the Markdownifier</a>. I didn&rsquo;t do any updates to the interface as it is, in my opinion, not too bad.</p>
+
+<p>Marky is a tool for turning web pages into Markdown. It now uses Pandoc with GFM formatting. There&rsquo;s an API available for outputting to various formats (including JSON with title, source, rendered content, and Markdown content). See the API section of the Marky page for more info.</p>
+
+<p>Hope you find this useful! I&rsquo;ll actually be able to add back my &ldquo;add to nvALT&rdquo; links now, updated for <a href="https://nvultra.com">nvUltra</a><sup id="fnref:nv"><a class="footnote" href="https://brettterpstra.com#fn:nv" rel="footnote">1</a></sup>&hellip;</p>
+
+<p>Check Marky out at <a href="https://markdownrules.com/">markdownrules.com</a>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:nv">
+      <p>Beta is almost finished, if you still want on board, just email me through the <a href="https://nvultra.com">nvUltra site</a>.&nbsp;<a class="reversefootnote" href="https://brettterpstra.com#fnref:nv">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113142009204600751" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F15%2Fmarky-is-back%2F&amp;text=Marky+is+back&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F15%2Fmarky-is-back%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16809038.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-15T09:08:00-05:00</pubDate>
+<pubDate>2024-09-15T09:08:00-05:00</pubDate>
+</item>
+<item>
+<title>The HoudahGeo giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16808216/the-houdahgeo-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16808216/the-houdahgeo-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with HoudahGeo icon, confetti background" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/houdahgeo2024-winners-rb.jpg" title="Giveaway Robot with HoudahGeo icon, confetti background" width="800" />
+              </noscript>
+            
+
+<p>The HoudahGeo giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Adam Oldakowski</li>
+  <li>Stephen Hannam</li>
+  <li>Steve Mattan</li>
+  <li>Gary Burkhardt</li>
+  <li>Theo Menezes</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://www.houdah.com/houdahGeo/">HoudahGeo is still worth checking out</a>. If you&rsquo;re interested in geocoding and geotagging your photos, HoudahGeo is the way to go. Use <a href="https://www.houdah.com/houdahGeo/buy.html?coupon=HGTERPSTRA24">this link</a> to save 20%, or enter <code class="language-plaintext highlighter-rouge">HGTERPSTRA24</code> at checkout.</p>
+
+<p>Next up is <a href="https://reinventedsoftware.com/keepit/">Keep It</a>. Check back every Monday through October, 2024 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio</a></li>
+  <li><a href="https://manytricks.com/moom/">Moom</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113131475980165504" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F13%2Fthe-houdahgeo-giveaway-winners%2F&amp;text=The+HoudahGeo+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F13%2Fthe-houdahgeo-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16808216.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-13T12:30:00-05:00</pubDate>
+<pubDate>2024-09-13T12:30:00-05:00</pubDate>
+</item>
+<item>
+<title>Cookiecutter: a Planter alternative</title>
+<link>https://brett.trpstra.net/link/535/16808173/cookiecutter-a-planter-alternative</link>
+<guid>https://brett.trpstra.net/link/535/16808173/cookiecutter-a-planter-alternative</guid>
+<content:encoded><![CDATA[
+
+<p>Shorly after publishing <a href="https://brettterpstra.com/projects/planter/">Planter</a>, user cavalierex brought <a href="https://cookiecutter.readthedocs.io/en/2.6.0/index.html">Cookiecutter</a> to my attention <a href="https://forum.brettterpstra.com/t/is-planter-like-cookiecutter/2218">on the forum</a>. It appears to be a complete replacement and is far more mature than Planter.</p>
+
+<p>I don&rsquo;t regret making Planter &mdash; it fits my own needs perfectly. If I&rsquo;d known about cookiecutter before starting, though, I probably wouldn&rsquo;t have bothered reinventing the wheel. It was still fun to code Planter.</p>
+
+<p>Cookiecutter is so close in functionality that I thought it would be worth sharing. If Planter works well for you, great, but if you want an alternative, <a href="https://cookiecutter.readthedocs.io/en/2.6.0/index.html">check it out</a>.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113131196981311789" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F13%2Fcookiecutter-a-planter-alternative%2F&amp;text=Cookiecutter%3A+a+Planter+alternative&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F13%2Fcookiecutter-a-planter-alternative%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16808173.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-13T11:20:00-05:00</pubDate>
+<pubDate>2024-09-13T11:20:00-05:00</pubDate>
+</item>
+<item>
+<title>HoudahGeo giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16799235/houdahgeo-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16799235/houdahgeo-giveaway</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Giveaway Robot with HoudahGeo icon" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2023/09/giveaway-houdahgeo2024-rb.jpg" title="Giveaway Robot with HoudahGeo icon" width="800" />
+              </noscript>
+            
+
+<p>I&rsquo;m excited to offer the next giveaway, 5 licenses ($39 value each) for <a href="https://www.houdah.com/houdahGeo/">HoudahGeo</a>. Have you ever wanted a fully-fledged interface for automatically geocoding and geotagging your photo collection? HoudahGeo makes it easy to add locations in Apple Photos, iPhoto, and Aperture, and can write tags to the original image files. This giveaway is for version 6, but version 7 is in the works and winners will be upgraded when it&rsquo;s released.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Use HoudahGeo to geocode and geotag your photos. &ldquo;Pin&rdquo; photos to the exact places where they were taken. HoudahGeo stores latitude, longitude and altitude as geotags right within the image file. Just like a GPS-enabled camera. HoudahGeo supports many methods of geocoding, ranging from automatic to manual. Use a GPS track log, reference photos taken with iPhone, or pick locations on the built-in map.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="HoudahGeo screenshot" class="aligncenter" height="685" src="https://cdn3.brettterpstra.com/uploads/2023/12/houdageo-screenshot-800.jpg" title="HoudahGeo screenshot" width="800" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://www.houdah.com/houdahGeo/">HoudahGeo</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, September 13, at 12pm Central. The drawing is for 5 licenses ($39 value each) for HoudahGeo, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/09/09/houdahgeo-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through October, 2024</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113107760832964771" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F09%2Fhoudahgeo-giveaway%2F&amp;text=HoudahGeo+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F09%2Fhoudahgeo-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16799235.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-09T08:00:00-05:00</pubDate>
+<pubDate>2024-09-09T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Welcome to the lab 4.0</title>
+<link>https://brett.trpstra.net/link/535/16796719/welcome-to-the-lab-4-dot-0</link>
+<guid>https://brett.trpstra.net/link/535/16796719/welcome-to-the-lab-4-dot-0</guid>
+<content:encoded><![CDATA[
+
+<noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="welcome-to-the-lab-rb.jpg" class="aligncenter" height="226" src="https://cdn3.brettterpstra.com/uploads/2024/09/welcome-to-the-lab-rb.jpg" title="welcome-to-the-lab-rb.jpg" width="800" />
+              </noscript>
+            
+
+<p>I did a redesign of this site last night. I hope you like it. It&rsquo;s heavily inspired by the <a href="https://ia.net/topics/boom-boom-boom">iA blog</a>. Shamelessly inspired, I guess. But it was a fun exercise to revamp the Jekyll setup, which took a ton of work. I do not love templating in Liquid, but I do like writing filters in Ruby. I think it came out pretty good.</p>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="lab-4.0-screenshot.jpg" class="aligncenter" height="1013" src="https://cdn3.brettterpstra.com/uploads/2024/09/lab-4.0-screenshot.jpg" title="lab-4.0-screenshot.jpg" width="1406" />
+              </noscript>
+            
+
+<p>I do this every few years when I get bored. This site has been running since 2010, and the Circle Six Blog before that. Gosh I&rsquo;ve been doing this a long time&hellip;</p>
+
+<p>Unfortunately the embedded comments are broken at the moment, so if you want to offer feedback, please <a href="https://forum.brettterpstra.com">join me in the forum</a>!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113103037765670232" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F08%2Fwelcome-to-the-lab-4-dot-0%2F&amp;text=Welcome+to+the+lab+4.0&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F08%2Fwelcome-to-the-lab-4-dot-0%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16796719.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-08T08:42:00-05:00</pubDate>
+<pubDate>2024-09-08T08:42:00-05:00</pubDate>
+</item>
+<item>
+<title>The Morpho Converter Pro giveaway winners!</title>
+<link>https://brett.trpstra.net/link/535/16795843/the-morpho-converter-pro-giveaway-winners</link>
+<guid>https://brett.trpstra.net/link/535/16795843/the-morpho-converter-pro-giveaway-winners</guid>
+<content:encoded><![CDATA[
+
+<p>The Morpho Converter Pro giveaway has ended, and I have winners to announce!</p>
+
+<h3 id="the-winners">The winners!</h3>
+
+<p>Congratulations to:</p>
+
+<ul>
+  <li>Carley Knight</li>
+  <li>Isaac Halvorson</li>
+  <li>Özgür Irmak</li>
+  <li>Giulio Galassi</li>
+  <li>Peter B.</li>
+</ul>
+
+<p>You should have received an email with details, please <a href="https://brettterpstra.com/contact/">let me know</a> if you didn&rsquo;t hear anything!</p>
+
+<h3 id="but-i-didnt-win">But I didn&rsquo;t win!</h3>
+
+<p>If you didn&rsquo;t win, sorry, but <a href="https://thinktapwork.com/">Morpho Converter Pro is still worth checking out</a>. All your conversions in one place!</p>
+
+<p>Next up is <a href="https://www.houdah.com/houdahGeo/">HoudahGeo</a>. Check back every Monday through October, 2024 for more giveaways.
+The next giveaways include:</p>
+
+<ul>
+  <li><a href="https://reinventedsoftware.com/keepit/">Keep It</a></li>
+  <li><a href="https://screen.studio/?utm_source=giveaway&amp;utm_medium=giveaway&amp;utm_campaign=first&amp;utm_id=Brett_Terpstra+">Screen Studio</a></li>
+  <li><a href="https://manytricks.com/moom/">Moom</a></li>
+  <li><a href="https://www.omnigroup.com/omniplan">OmniPlan</a></li>
+</ul>
+
+<p>See the <a href="https://brettterpstra.com/giveaways/upcoming/">full list of upcoming giveaways</a>!</p>
+
+<p>If you want to suggest an app you&rsquo;d like to see in this series, let me know on <a href="https://twitter.com/ttscoff">Twitter</a> or <a href="https://nojack.easydns.ca/@ttscoff/">Mastodon</a>, and <a href="https://brettterpstra.com/subscribe/">join the email</a> list for notifications!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113102049404603278" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F06%2Fthe-morpho-converter-pro-giveaway-winners%2F&amp;text=The+Morpho+Converter+Pro+giveaway+winners%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F06%2Fthe-morpho-converter-pro-giveaway-winners%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16795843.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-06T12:10:00-05:00</pubDate>
+<pubDate>2024-09-06T12:10:00-05:00</pubDate>
+</item>
+<item>
+<title>Planter 3.0</title>
+<link>https://brett.trpstra.net/link/535/16790895/planter-3-dot-0</link>
+<guid>https://brett.trpstra.net/link/535/16790895/planter-3-dot-0</guid>
+<content:encoded><![CDATA[
+
+<p><a href="https://brettterpstra.com/2012/09/22/planter-tree-planting-for-your-filesystem/">Years ago</a> (12!) I made a script called Planter that would generate directory
+and file structures based on an indented template. I decided to
+reimagine the whole thing and am happy to release <a href="https://brettterpstra.com//projects/planter">Planter 3</a> today.</p>
+
+<p>Instead of relying on a single template file, Planter now expects a
+template directory with all of the subdirectories and files you want to
+include already existing. To make this work, the template variable
+system has been completely reworked. It now supports named keys, prompts
+for values on the command line, and can even handle if/then logic and
+multiple choice variables.</p>
+
+<p>Template variables can be applied to filenames (including if/then logic)
+and within any type of text-based file (including XML, RTF, JSON, etc.,
+and Apple Binary PLIST will be converted automatically). This means you
+can template your source code, your notes, even your Mindnode mind maps,
+rich text notes, and Scrivener documents.</p>
+
+<p>I&rsquo;m not going to document the whole thing here, as I&rsquo;ve written a pretty
+good README for the project. If this is of interest to you, let me know
+about anything that&rsquo;s confusing in the documentation.</p>
+
+<p>I will note that because of its interactive nature on the command line,
+it&rsquo;s a bit more difficult to incorporate into something like a LaunchBar
+or Alfred workflow. But not impossible, as values can be passed as
+arguments, so if your automation handles the interaction for filling in
+the variables, you can easily call the script. It&rsquo;s also now a Ruby gem,
+which means you can&rsquo;t easily embed the whole script and would have to
+rely on it being installed on the user&rsquo;s system.</p>
+
+<p>If you regularly create projects that follow a similar directory/file structure, Planter will save you a ton of time. <a href="https://brettterpstra.com//projects/planter">Check it out.</a></p>
+
+<p>If you have ideas or need support, please use the <a href="https://forum.brettterpstra.com">Forum</a>. I look forward to hearing from you!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113068291886092131" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F02%2Fplanter-3-dot-0%2F&amp;text=Planter+3.0&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F02%2Fplanter-3-dot-0%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16790895.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-02T08:37:00-05:00</pubDate>
+<pubDate>2024-09-02T08:37:00-05:00</pubDate>
+</item>
+<item>
+<title>Morpho Converter Pro giveaway!</title>
+<link>https://brett.trpstra.net/link/535/16790879/morpho-converter-pro-giveaway</link>
+<guid>https://brett.trpstra.net/link/535/16790879/morpho-converter-pro-giveaway</guid>
+<content:encoded><![CDATA[
+
+<p>I&rsquo;m excited to offer the next giveaway, 5 lifetime Pro licenses ($19.99 value each) for <a href="https://thinktapwork.com/">Morpho Converter Pro</a>. Morpho is an app for Mac, iOS, and Apple Watch that makes converting literally any number to any other unit possible. Miles to kilometers? Grams to ounces? USD to HKD? Anything you need to convert, Morpho is there for you, on your phone, in your menu bar, even on your watch.</p>
+
+<p>From the developer:</p>
+
+<blockquote>
+  <p>Morpho is a fast and elegant, travel-focused unit and currency converter app for iPhone, iPad, Mac, and Apple Watch. In addition to providing instant conversions for your favorite units, it also includes helpful information for travel to 256 countries and regions.</p>
+</blockquote>
+
+
+              <noscript class="loading-lazy">
+                <source media="(max-width: 640px)" />
+                <source type="image/avif" />
+                <source type="image/webp" />
+                <source />
+                <img alt="Morpho Converter Pro screenshot" class="alignright" height="800" src="https://cdn3.brettterpstra.com/uploads/2023/11/morpho_screenshot-800.jpg" title="Morpho Converter Pro screenshot" width="370" />
+              </noscript>
+            
+
+<p>Check out the <a href="https://thinktapwork.com/">Morpho Converter Pro</a> site for more info.</p>
+
+<p>Sign up below to enter. Winners will be randomly drawn on Friday, September 06, at 12pm Central. The drawing is for 5 lifetime Pro licenses ($19.99 value each) for Morpho Converter Pro, one per winner. Note that if you&rsquo;re reading this via RSS, you&rsquo;ll need to visit <a href="https://brettterpstra.com/2024/09/02/morpho-converter-pro-giveaway">this post on brettterpstra.com</a> to enter!</p>
+
+<p>New rule: All signups must have a <strong>first and last name</strong> in order to be eligible. Entries with only a first name will be skipped by the giveaway robot. A lot of the vendors in this series require first and last names for generating license codes, and your cooperation is appreciated!</p>
+
+<p class="sorry"><em>Sorry, this giveaway has ended.</em></p>
+
+<p>Stay tuned for <a href="https://brettterpstra.com/giveaways/upcoming/" title="Upcoming Giveaways - BrettTerpstra.com">more giveaways every week through October, 2024</a> (and maybe beyond).</p>
+
+<p>If you have an app you&rsquo;d love to see featured in this series of giveaways, <a href="https://brettterpstra.com/contact/">let me know</a>. Also be sure to <a href="https://brettterpstra.com/subscribe/">sign up for the mailing list</a> or <a href="https://nojack.easydns.ca/@ttscoff/">follow me on Mastodon</a> so you can be (among) the first to know about these!</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113068121619697759" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F02%2Fmorpho-converter-pro-giveaway%2F&amp;text=Morpho+Converter+Pro+giveaway%21&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F09%2F02%2Fmorpho-converter-pro-giveaway%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16790879.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-09-02T08:00:00-05:00</pubDate>
+<pubDate>2024-09-02T08:00:00-05:00</pubDate>
+</item>
+<item>
+<title>Updated: generate slick changelogs from Git commits</title>
+<link>https://brett.trpstra.net/link/535/16789692/updated-generate-slick-changelogs-from-git-commits</link>
+<guid>https://brett.trpstra.net/link/535/16789692/updated-generate-slick-changelogs-from-git-commits</guid>
+<content:encoded><![CDATA[
+
+<p>7 years ago I <a href="https://brettterpstra.com/2017/08/14/automatic-release-notes-from-git-commit-messages/">wrote about a script</a> I was using to generate changelogs for Marked. Since then I&rsquo;ve continued updating the script to work with just about all of my projects, from Xcode projects to Ruby gems to scripts that just have a VERSION file in the same directory. It can output a few different formats of changelog to accommodate all of my different documentation formats. So I&rsquo;m posting it again.</p>
+
+<!--more-->
+
+<p>Since it&rsquo;s unlikely anyone remembers, this script uses Git tags to determine what commits have been made since the last release. This works well with git-flow, but any setup that creates tagged releases will work. It parses commit messages for lines like <code class="language-plaintext highlighter-rouge">- FIXED: description of fix</code>, and it now works with a more &ldquo;tag-like&rdquo; syntax: <code class="language-plaintext highlighter-rouge">@fix description of fix</code>. It gathers all of these lines from the commit messages and outputs a Markdown-formatted changelog, ready for release notes or website posting.</p>
+
+<p>It&rsquo;s simple yet highly effective. Any time I make a change I want to include in the release notes, I just make sure to include a tagged line in the commit message. It works with commit subjects as well as commit notes. Then, when it&rsquo;s time to release, I just run <code class="language-plaintext highlighter-rouge">changelog</code> and get my output for sharing. It can also update a CHANGELOG.md file by running <code class="language-plaintext highlighter-rouge">changelog -u</code>. It detects the format of the file and adds appropriately-formatted notes to the file, recognizing if there&rsquo;s already an entry for the current version number and replacing it.</p>
+
+<p>Some of the customizations are specific to the formatting I use for Bunch notes, which include syntax for custom Jekyll plugins for icons and availability. These won&rsquo;t be of use to anyone else, but unless your directory structure happens to exactly match the one I use for Bunch, or you use the <code class="language-plaintext highlighter-rouge">--format bunch</code> flag, you&rsquo;ll never see those. But if you want to edit the script to fit <em>your</em> specific needs, you can see how it&rsquo;s done.</p>
+
+<p>Eventually I&rsquo;ll probably generalize this and make it work with templates and a config file with regexes for matching types and formats, but for now it&rsquo;s just open to your hacking. This script has been a <em>huge</em> timesaver for me and has resulted in very complete release notes and changelogs I can be proud of. I hope it does the same for you.</p>
+
+<p><a href="https://gist.github.com/ttscoff/17fbce4f229609082b45681bba7a9967">Grab the script here.</a></p>
+
+<p>The available tags are:</p>
+
+<ul>
+  <li>@change, @changed</li>
+  <li>@breaking, @deprecated</li>
+  <li>@rem, @removed</li>
+  <li>@fix, @fixed</li>
+  <li>@imp, @improved, @improvement</li>
+  <li>@add, @added, @new</li>
+</ul>
+
+<p>All of these can be in the format <code class="language-plaintext highlighter-rouge">- TAGNAME: description</code> or <code class="language-plaintext highlighter-rouge">@tagname description</code>. The first letter of the description will be capitalized when the release notes are rendered.</p>
+
+<p>You can also use <code class="language-plaintext highlighter-rouge">changelog --select</code> to pop up an <code class="language-plaintext highlighter-rouge">fzf</code> selection of all tags, allowing you to generate release notes added since any previous version. Use <code class="language-plaintext highlighter-rouge">changelog --only TYPE</code> to output only changes of a type (changed, new, improved, deprecated).</p>
+
+<p>You can also use this script in combination with a tool like <code class="language-plaintext highlighter-rouge">gh</code> to output a changelog when creating a GitHub release. Just pass output of the  <code class="language-plaintext highlighter-rouge">changelog</code> command to any command that accepts input on STDIN.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight fixed"><code>Usage: changelog [options] [CHANGELOG_FILE] [APP_NAME]
+      Gets git log entries since last tag containing CHANGED, NEW, IMPROVED, FIXED, REMOVED
+    -c, --copy                       Copy results to clipboard
+    -f, --format FORMAT              Output format (def_list|bunch|markdown)
+    -o, --only TYPES                 Only output changes of type (changed, new, improved, fixed, deprecated)
+        --file PATH                  File to read additional commit messages from (for commit-msg hooks)
+    -s, --select                     Choose "since" tag
+    -u, --update [FILE]              Update changelog file
+    -v, --version=VER                Force version (skips version detection)
+    -n, --no_version                 Skip version check (prevents header output)
+    -h, --help                       Display this screen</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">CHANGELOG_FILE</code> and <code class="language-plaintext highlighter-rouge">APP_NAME</code> are optional, it will automatically detect a <code class="language-plaintext highlighter-rouge">CHANGELOG.md</code> file in the current directory, and derive the app name based on the project type (works with Ruby gems and Xcode projects currently).</p>
+
+<p>Have fun, and may your changelogs be informative and complete. Again, <a href="https://gist.github.com/ttscoff/17fbce4f229609082b45681bba7a9967">here&rsquo;s the script</a>. That Gist will be updated as I make changes to the script over time, so check the Gist comments for additional notes as this post ages. If I get around to making a package out of this (with templates and config and such), there will be a new post about it, of course. Based on a quick search there are a ton of changelog generators already out there, so this will probably remain a script that fits my personal needs perfectly, and is easily hacked around with by others.</p>
+
+<p>Like or share this post <a href="https://nojack.easydns.ca/users/ttscoff/statuses/113058221954568577" target="_blank" title="This post on Mastodon">on Mastodon</a> or <a class="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fbrettterpstra.com%2F2024%2F08%2F31%2Fupdated-generate-slick-changelogs-from-git-commits%2F&amp;text=Updated%3A+generate+slick+changelogs+from+Git+commits&amp;url=https%3A%2F%2Fbrettterpstra.com%2F2024%2F08%2F31%2Fupdated-generate-slick-changelogs-from-git-commits%2F&amp;via=ttscoff" rel="nofollow" target="_blank" title="Tweet this post">Twitter</a>.</p>
+    <hr style="margin: 40px 0;" />
+<p>BrettTerpstra.com is supported by readers like you. <a href="https://brettterpstra.com/support/">Click here if you'd like to help out.</a></p>
+<p class="copyright">All materials &copy;2024 Brett Terpstra</p>
+<p><a href="https://twitter.com/ttscoff" rel="me">Twitter</a> | <a href="https://nojack.easydns.ca/@ttscoff" rel="me">Mastodon</a> | <a href="https://github.com/ttscoff">GitHub</a> | <a href="https://brettterpstra.com/legal/privacy.html">Privacy Policy</a></p><img height="1" src="https://brett.trpstra.net/link/535/16789692.gif" width="1" />
+]]></content:encoded>
+<pubDate>2024-08-31T14:02:00-05:00</pubDate>
+<pubDate>2024-08-31T14:02:00-05:00</pubDate>
+</item>
+
+</channel>
+</rss>
