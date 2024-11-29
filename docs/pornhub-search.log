@@ -993,3 +993,32 @@ Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Read timed ou
 Fetch failed from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
 append_entries: 0
 error when rendering xml, skip docs/pornhub-search
+------------------------------------------------------
+Started: 2024-11-29 18:46:26.665422
+Existing_entries: 465
+Fetching from https://hub.rss.direct/pornhub/search/%E9%9C%B2%E5%87%BA
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/%E9%9C%B2%E5%87%BA
+Fetching from https://hub.rss.direct/pornhub/search/%E7%BE%A4p
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/%E7%BE%A4p
+Fetching from https://hub.rss.direct/pornhub/search/%E6%88%B7%E5%A4%96%E3%80%81%E9%87%8E%E5%A4%96%E3%80%81%E9%9D%92%E5%A5%B8
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/%E6%88%B7%E5%A4%96%E3%80%81%E9%87%8E%E5%A4%96%E3%80%81%E9%9D%92%E5%A5%B8
+Fetching from https://hub.rss.direct/pornhub/search/%E6%97%A5%E6%9C%AC
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/%E6%97%A5%E6%9C%AC
+Fetching from https://hub.rss.direct/pornhub/search/Mr%20Bunny
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/Mr%20Bunny
+Fetching from https://hub.rss.direct/pornhub/search/Melody%20Marks
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/Melody%20Marks
+Fetching from https://hub.rss.direct/pornhub/search/Swag.Live
+Fetch error: 503
+Fetch failed from https://hub.rss.direct/pornhub/search/Swag.Live
+Fetching from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Read timed out. (read timeout=30)
+Fetch failed from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
+append_entries: 0
+error when rendering xml, skip docs/pornhub-search
