@@ -10433,3 +10433,38 @@ Fetch error: 403
 Fetch failed from https://hub.rss.direct/telegram/channel/dianying4K
 append_entries: 0
 error when rendering xml, skip docs/telegram-1
+------------------------------------------------------
+Started: 2025-01-03 12:27:27.890585
+Existing_entries: 1100
+Fetching from https://hub.rss.direct/telegram/channel/yunpanshare
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/yunpanshare
+Fetching from https://hub.rss.direct/telegram/channel/hdhhd21
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/hdhhd21
+Fetching from https://hub.rss.direct/telegram/channel/XiangxiuNB
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/XiangxiuNB
+Fetching from https://hub.rss.direct/telegram/channel/alyp_TV
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/alyp_TV
+Fetching from https://www.ziyuanhui.cc/feed
+Append: [想象之光 All We Imagine as Light (2024) 1080P 中字](https://www.ziyuanhui.cc/forum-post/4425.html)
+Append: [他人即地狱 他人は地獄だ (2024) 1080P 中字](https://www.ziyuanhui.cc/forum-post/4424.html)
+Fetching from https://hub.rss.direct/telegram/channel/yunpanpan
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/yunpanpan
+Fetching from https://hub.rss.direct/telegram/channel/shareAliyun
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/shareAliyun
+Fetching from https://hub.rss.direct/telegram/channel/Aliyun_4K_Movies
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/Aliyun_4K_Movies
+Fetching from https://hub.rss.direct/telegram/channel/Q66Share
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/Q66Share
+Fetching from https://hub.rss.direct/telegram/channel/dianying4K
+Fetch error: 403
+Fetch failed from https://hub.rss.direct/telegram/channel/dianying4K
+append_entries: 2
+error when rendering xml, skip docs/telegram-1
