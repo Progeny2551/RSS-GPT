@@ -2986,3 +2986,32 @@ Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries e
 Fetch failed from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
 append_entries: 0
 error when rendering xml, skip docs/pornhub-search
+------------------------------------------------------
+Started: 2025-01-22 12:27:16.419729
+Existing_entries: 609
+Fetching from https://hub.rss.direct/pornhub/search/%E9%9C%B2%E5%87%BA
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/%E9%9C%B2%E5%87%BA (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c12695e0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/%E9%9C%B2%E5%87%BA
+Fetching from https://hub.rss.direct/pornhub/search/%E7%BE%A4p
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/%E7%BE%A4p (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c1269460>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/%E7%BE%A4p
+Fetching from https://hub.rss.direct/pornhub/search/%E6%88%B7%E5%A4%96%E3%80%81%E9%87%8E%E5%A4%96%E3%80%81%E9%9D%92%E5%A5%B8
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/%E6%88%B7%E5%A4%96%E3%80%81%E9%87%8E%E5%A4%96%E3%80%81%E9%9D%92%E5%A5%B8 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c1269640>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/%E6%88%B7%E5%A4%96%E3%80%81%E9%87%8E%E5%A4%96%E3%80%81%E9%9D%92%E5%A5%B8
+Fetching from https://hub.rss.direct/pornhub/search/%E6%97%A5%E6%9C%AC
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/%E6%97%A5%E6%9C%AC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c1269ac0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/%E6%97%A5%E6%9C%AC
+Fetching from https://hub.rss.direct/pornhub/search/Mr%20Bunny
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/Mr%20Bunny (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c1270580>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/Mr%20Bunny
+Fetching from https://hub.rss.direct/pornhub/search/Melody%20Marks
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/Melody%20Marks (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c1269790>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/Melody%20Marks
+Fetching from https://hub.rss.direct/pornhub/search/Swag.Live
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/Swag.Live (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c112e8b0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/Swag.Live
+Fetching from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /pornhub/search/%E5%9B%BD%E4%BA%A7 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f15c146c310>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/pornhub/search/%E5%9B%BD%E4%BA%A7
+append_entries: 0
+error when rendering xml, skip docs/pornhub-search
