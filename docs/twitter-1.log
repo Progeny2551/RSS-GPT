@@ -9340,3 +9340,65 @@ Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries e
 Fetch failed from https://hub.rss.direct/twitter/user/chunmomo0127
 append_entries: 0
 error when rendering xml, skip docs/twitter-1
+------------------------------------------------------
+Started: 2025-01-28 12:26:45.180123
+Existing_entries: 1039
+Fetching from https://hub.rss.direct/twitter/user/RICHG6789
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/RICHG6789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65c2370>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/RICHG6789
+Fetching from https://hub.rss.direct/twitter/user/JLSQ_Ssexy
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/JLSQ_Ssexy (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65c2f40>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/JLSQ_Ssexy
+Fetching from https://hub.rss.direct/twitter/user/wubu2019
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/wubu2019 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65c2100>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/wubu2019
+Fetching from https://hub.rss.direct/twitter/user/hanyan789
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/hanyan789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4a90>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/hanyan789
+Fetching from https://hub.rss.direct/twitter/user/NTphotographyNT
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/NTphotographyNT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b46d0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/NTphotographyNT
+Fetching from https://hub.rss.direct/twitter/user/vidacg2
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/vidacg2 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4c40>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/vidacg2
+Fetching from https://hub.rss.direct/twitter/user/mangmang2001
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/mangmang2001 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b64f8760>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/mangmang2001
+Fetching from https://hub.rss.direct/twitter/user/duyao_56789
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/duyao_56789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b45b0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/duyao_56789
+Fetching from https://hub.rss.direct/twitter/user/MMMenmentan
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/MMMenmentan (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b64f8220>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/MMMenmentan
+Fetching from https://hub.rss.direct/twitter/user/nnian_
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/nnian_ (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4a90>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/nnian_
+Fetching from https://hub.rss.direct/twitter/user/yonaio6
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/yonaio6 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b64f8880>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/yonaio6
+Fetching from https://hub.rss.direct/twitter/user/iFluffyPotato
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/iFluffyPotato (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b661f3a0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/iFluffyPotato
+Fetching from https://hub.rss.direct/twitter/user/luobao1221
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/luobao1221 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4c10>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/luobao1221
+Fetching from https://hub.rss.direct/twitter/user/hailingKH
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/hailingKH (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b66089d0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/hailingKH
+Fetching from https://hub.rss.direct/twitter/user/Adaydream617
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/Adaydream617 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4940>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/Adaydream617
+Fetching from https://hub.rss.direct/twitter/user/wyysmg
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/wyysmg (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b64f8af0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/wyysmg
+Fetching from https://hub.rss.direct/twitter/user/0721KaiKinSyou
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/0721KaiKinSyou (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b661f220>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/0721KaiKinSyou
+Fetching from https://hub.rss.direct/twitter/user/xia0kong25
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/xia0kong25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b64f88b0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/xia0kong25
+Fetching from https://hub.rss.direct/twitter/user/chunmomo0127
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /twitter/user/chunmomo0127 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f67b65b4a60>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/twitter/user/chunmomo0127
+append_entries: 0
+error when rendering xml, skip docs/twitter-1
