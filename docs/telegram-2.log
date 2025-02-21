@@ -5608,3 +5608,38 @@ Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries e
 Fetch failed from https://hub.rss.direct/telegram/channel/shudong7
 append_entries: 0
 error when rendering xml, skip docs/telegram-2
+------------------------------------------------------
+Started: 2025-02-21 01:06:44.695488
+Existing_entries: 959
+Fetching from https://hub.rss.direct/telegram/channel/meitutu
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/meitutu (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dda11dc0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/meitutu
+Fetching from https://hub.rss.direct/telegram/channel/pengyxxxxtg
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/pengyxxxxtg (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd823820>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/pengyxxxxtg
+Fetching from https://hub.rss.direct/telegram/channel/botmzt
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/botmzt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51ddef4070>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/botmzt
+Fetching from https://hub.rss.direct/telegram/channel/baisi
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/baisi (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd823280>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/baisi
+Fetching from https://hub.rss.direct/telegram/channel/a7tscc
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/a7tscc (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd8b62e0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/a7tscc
+Fetching from https://hub.rss.direct/telegram/channel/ziyuanjiatvv
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/ziyuanjiatvv (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd823070>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/ziyuanjiatvv
+Fetching from https://hub.rss.direct/telegram/channel/MeiTuKu
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/MeiTuKu (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dda11d60>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/MeiTuKu
+Fetching from https://hub.rss.direct/telegram/channel/xrwfc
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/xrwfc (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd823940>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/xrwfc
+Fetching from https://hub.rss.direct/telegram/channel/ek777777
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/ek777777 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dda11d90>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/ek777777
+Fetching from https://hub.rss.direct/telegram/channel/shudong7
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/shudong7 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f51dd8b62b0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/shudong7
+append_entries: 0
+error when rendering xml, skip docs/telegram-2
