@@ -19000,3 +19000,86 @@ Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries e
 Fetch failed from https://hub.rss.direct/telegram/channel/dianying4K
 append_entries: 50
 error when rendering xml, skip docs/telegram-1
+------------------------------------------------------
+Started: 2025-02-25 01:07:34.590237
+Existing_entries: 1100
+Fetching from https://hub.rss.direct/telegram/channel/yunpanshare
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/yunpanshare (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f4cda30>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/yunpanshare
+Fetching from https://hub.rss.direct/telegram/channel/hdhhd21
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/hdhhd21 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f6419a0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/hdhhd21
+Fetching from https://hub.rss.direct/telegram/channel/XiangxiuNB
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/XiangxiuNB (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f4cd6a0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/XiangxiuNB
+Fetching from https://hub.rss.direct/telegram/channel/alyp_TV
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/alyp_TV (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f641af0>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/alyp_TV
+Fetching from https://www.ziyuanhui.cc/feed
+Append: [《DeepSeek中小学生使用手册》](https://www.ziyuanhui.cc/forum-post/6434.html)
+Append: [了不起的中国系列《讲给孩子的中华名人故事》](https://www.ziyuanhui.cc/forum-post/6433.html)
+Append: [儿童科普教育《探秘十大自然现象》](https://www.ziyuanhui.cc/forum-post/6432.html)
+Append: [儿童科普教育《世界文化遗产·中国篇》10集全](https://www.ziyuanhui.cc/forum-post/6431.html)
+Append: [儿童科普教育《你不知道的十国传统艺术》](https://www.ziyuanhui.cc/forum-post/6430.html)
+Append: [儿童科普教育《论语里的大智慧》（50集精讲动画故事）](https://www.ziyuanhui.cc/forum-post/6429.html)
+Append: [儿童科普教育《跟乾隆趣游大故宫》](https://www.ziyuanhui.cc/forum-post/6428.html)
+Append: [儿童科普教育《跟动物老师学发明》](https://www.ziyuanhui.cc/forum-post/6427.html)
+Append: [《一路繁花》2025 真人秀](https://www.ziyuanhui.cc/forum-post/6426.html)
+Append: [《杀人犯.罪与罚》2009 悬疑 犯罪 港版+海外版](https://www.ziyuanhui.cc/forum-post/6424.html)
+Append: [《魔道天师：幽冥黄泉》2025 动作 奇幻 4K](https://www.ziyuanhui.cc/forum-post/6422.html)
+Append: [《白面包车里的人》面包车惊魂 2024 惊悚 美影](https://www.ziyuanhui.cc/forum-post/6420.html)
+Append: [无损音乐 孙燕姿-风箏 [16B-44.1kHz] [ALAC]](https://www.ziyuanhui.cc/forum-post/6418.html)
+Append: [《四大名捕全系列》精制插图本 套装共8册 温瑞安[epub]](https://www.ziyuanhui.cc/forum-post/6415.html)
+Append: [《莽荒纪》全本 古典仙侠小说 我吃西红柿作品[epub]](https://www.ziyuanhui.cc/forum-post/6414.html)
+Append: [《三浦追傩x樱井画门 亚人》日漫 1-17册[pdf]](https://www.ziyuanhui.cc/forum-post/6413.html)
+Append: [《回到明朝当王爷》全13册 梦回大明[epub]](https://www.ziyuanhui.cc/forum-post/6412.html)
+Append: [《择天记》多看插画版套装全八册 没有命运 只有选择[epub]](https://www.ziyuanhui.cc/forum-post/6411.html)
+Append: [《斗罗大陆》套装全3册 唐家三少[epub]](https://www.ziyuanhui.cc/forum-post/6410.html)
+Append: [《寻秦记》漫画 廖福成创刊 龙虾版 199完[pdf]](https://www.ziyuanhui.cc/forum-post/6409.html)
+Append: [《大灾难师》漫画 一锋 中漫版 01-10完结[pdf]](https://www.ziyuanhui.cc/forum-post/6408.html)
+Append: [《春秋猛士》漫画 黄玉郎 中漫版 01-16完结[pdf]](https://www.ziyuanhui.cc/forum-post/6407.html)
+Append: [《圣斗士星矢完全版》漫画 1-22卷完结 车田正美 超清[pdf]](https://www.ziyuanhui.cc/forum-post/6406.html)
+Append: [[影视] 四平青年＋二龙湖浩哥系列影视合集](https://www.ziyuanhui.cc/forum-post/6405.html)
+Append: [《剑翻云》漫画 廖福成 弹指版 186完 [jpg]](https://www.ziyuanhui.cc/forum-post/6404.html)
+Append: [《惊奇物语》全三册 南派三叔 超级反转 超好看[epub]](https://www.ziyuanhui.cc/forum-post/6403.html)
+Append: [《雏蜂》第一部 全11册 国产科幻动作漫画 国产科幻扛鼎之作[epub]](https://www.ziyuanhui.cc/forum-post/6402.html)
+Append: [《史上名妓之风尘侠女 小凤仙》《画魂传奇 潘玉良》《琵琶女 花秀红》漫画三册[pdf]](https://www.ziyuanhui.cc/forum-post/6401.html)
+Append: [《爱的初体验：26种上床前通关要领大剖析》[pdf]](https://www.ziyuanhui.cc/forum-post/6400.html)
+Append: [《女医师教你真正愉悦的性愛》[pdf]](https://www.ziyuanhui.cc/forum-post/6399.html)
+Append: [【韩剧】问问星星吧 별들에게 물어봐 (2025) 全16集完结 1080P 中字](https://www.ziyuanhui.cc/forum-post/6398.html)
+Append: [[视频素材] 「短视频制作素材-开车视角」](https://www.ziyuanhui.cc/forum-post/6397.html)
+Append: [[书籍] 汽车维修从入门到精通（彩色图解)[PDF][15M]](https://www.ziyuanhui.cc/forum-post/6396.html)
+Append: [《修个妹的仙》好看的修仙小说[epub]](https://www.ziyuanhui.cc/forum-post/6394.html)
+Append: [《琅琊榜》小说 架空历史年度最佳小说 梅长苏[epub]](https://www.ziyuanhui.cc/forum-post/6393.html)
+Append: [《战神粟裕》一代战神 运兵奇巧 用势奇险 胆识奇绝[epub]](https://www.ziyuanhui.cc/forum-post/6392.html)
+Append: [《火影忍者全集》第1部-第10部 岸本齐史[epub]](https://www.ziyuanhui.cc/forum-post/6391.html)
+Append: [《活页计算》小学数学 1-6年级全套 2025春最新版[pdf]](https://www.ziyuanhui.cc/forum-post/6390.html)
+Append: [《DeepSeek大模型文档》大模型概念 技术与应用实践 厦门大学140页[pdf]](https://www.ziyuanhui.cc/forum-post/6389.html)
+Append: [《体位姿势大全 动漫版》52式 科普书籍[pdf]](https://www.ziyuanhui.cc/forum-post/6388.html)
+Append: [《影响中国历史的100件大事》有声书 全100集 读懂中华上下五千年历史[m4a]](https://www.ziyuanhui.cc/forum-post/6387.html)
+Append: [《中国铁路图》国家铁路网规划示意图 中国铁路图彩色版[pdf]](https://www.ziyuanhui.cc/forum-post/6386.html)
+Append: [《新石纪-石纪元》26卷全 Boichi 超清[pdf]](https://www.ziyuanhui.cc/forum-post/6385.html)
+Append: [《诈欺游戏》1-20卷全 甲斐谷忍 超清[pdf]](https://www.ziyuanhui.cc/forum-post/6384.html)
+Append: [《神话任务》1-4季 2025 喜剧 美剧](https://www.ziyuanhui.cc/forum-post/6383.html)
+Append: [《秒懂新闻热点：3分钟 · 懂世界》套装10本[pdf]](https://www.ziyuanhui.cc/forum-post/6381.html)
+Append: [《死亡笔记》漫画 1-13卷全 小畑健 超清[pdf]](https://www.ziyuanhui.cc/forum-post/6380.html)
+Append: [《老夫子年代大全集》漫画 30卷完 王泽 珍藏版稀缺资源[pdf]](https://www.ziyuanhui.cc/forum-post/6379.html)
+Append: [《街头霸王》经典港漫 许景琛 玉郎国际 中漫版 113卷完[mobi]](https://www.ziyuanhui.cc/forum-post/6378.html)
+Append: [《倒霉日》2025 喜剧 美影](https://www.ziyuanhui.cc/forum-post/6377.html)
+Fetching from https://hub.rss.direct/telegram/channel/yunpanpan
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/yunpanpan (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f449190>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/yunpanpan
+Fetching from https://hub.rss.direct/telegram/channel/shareAliyun
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/shareAliyun (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f3d6a30>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/shareAliyun
+Fetching from https://hub.rss.direct/telegram/channel/Aliyun_4K_Movies
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/Aliyun_4K_Movies (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f5f0520>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/Aliyun_4K_Movies
+Fetching from https://hub.rss.direct/telegram/channel/Q66Share
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/Q66Share (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f8b9910>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/Q66Share
+Fetching from https://hub.rss.direct/telegram/channel/dianying4K
+Fetch error: HTTPSConnectionPool(host='hub.rss.direct', port=443): Max retries exceeded with url: /telegram/channel/dianying4K (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fc87f8d2460>: Failed to resolve 'hub.rss.direct' ([Errno -5] No address associated with hostname)"))
+Fetch failed from https://hub.rss.direct/telegram/channel/dianying4K
+append_entries: 50
+error when rendering xml, skip docs/telegram-1
